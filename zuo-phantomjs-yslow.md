@@ -2,7 +2,7 @@
 description: PhantomJS 是一款功能強大的 WebKit 指令工具，它可以模擬瀏覽器進行網站的存取與測試。
 ---
 
-# 實作：PhantomJS 與 YSlow
+# 實作：PhantomJS
 
 建立 `phantomjs` 新任務。
 
