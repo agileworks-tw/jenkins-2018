@@ -11,6 +11,13 @@ description: 版本：20180515
 3. 運送的浪費
 4. 過度設計的浪費
 
+### 執行 Jenkins 的作業系統必須先安裝哪一種軟體？
+
+1. Python
+2. .NET Framework
+3. Java JRE
+4. Node.js
+
 ### 實現持續整合的起點是？
 
 1. Release
@@ -18,12 +25,26 @@ description: 版本：20180515
 3. Test
 4. Development
 
+### 使用哪一個 Git 指令，可以將變更上傳到 Repository？
+
+1. git add
+2. git commit
+3. git status
+4. git push
+
 ### Pipeline Script 使用哪一種程式語言？
 
 1. Java
 2. Groovy
 3. Python
 4. Ruby
+
+### 實現 Pipeline as Code 需要定義哪一個設定檔？
+
+1. Dockerfile
+2. package.json
+3. Jenkinsfile
+4. build.xml
 
 ### 使用 Jenkins 進行持續發布，最佳的傳檔方式為何？
 
@@ -52,11 +73,6 @@ description: 版本：20180515
 2. 方便撰寫測試
 3. 定時自動執行
 4. 加速檔案傳輸
-
-### 自由作答：
-
-1. 你認為 Jenkins 可以為開發團隊帶來哪些好處？
-2. 你希望使用 Jenkins 搭配哪些開發工具或平台？
 
 
 
