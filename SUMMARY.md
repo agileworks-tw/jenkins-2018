@@ -7,7 +7,7 @@
   * [備份與還原](jenkins-an-ding/fen-yuan.md)
 * [啟用 Jenkins](unlock-jenkins.md)
 * [認識 Jenkins Job](job.md)
-* [Hello World](hello-world.md)
+* [建立第一個 Job：Hello World](hello-world.md)
 * [Slave 節點部署與管理](slave-bu-shu-guan-li.md)
 * [課後測驗](undefined.md)
 
