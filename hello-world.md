@@ -36,7 +36,7 @@ git clone https://github.com/{USERNAME}/helloworld.git
 cd helloworld
 ```
 
-![](.gitbook/assets/image%20%2855%29.png)
+![](.gitbook/assets/image%20%2856%29.png)
 
 ### 撰寫 Hello World 程式
 
@@ -102,7 +102,7 @@ python hello.py
 
 參考螢幕截圖：
 
-![](.gitbook/assets/image%20%2839%29.png)
+![](.gitbook/assets/image%20%2840%29.png)
 
 ### 上傳編輯過的專案檔案到 GitHub
 
@@ -140,7 +140,7 @@ https://github.com/{USERNAME}/hellworld
 
 點選左側選單的「新增作業」進入工作定義的畫面，在「Enter an item name」欄位輸入新工作名稱，例如 `helloworld` ，再選擇「建置 Free-Style 軟體專案」。
 
-![](.gitbook/assets/image%20%2847%29.png)
+![](.gitbook/assets/image%20%2848%29.png)
 
 進入 Free-Style Job 的任務組態設定。
 
@@ -189,11 +189,11 @@ python hello.
 
 等待建置完成，在「建置歷程」出現建置記錄，點選燈號進入 `#1` 的建置歷程頁面。
 
-![](.gitbook/assets/image%20%2846%29.png)
+![](.gitbook/assets/image%20%2847%29.png)
 
 Jenkins 的燈號代表每次建置與測試結果，有些開發團隊建置「實體」的紅綠燈號，讓專案的健康警訊更容易被察覺。
 
-![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2856%29.png)
+![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2857%29.png)
 
 點選「Console Output」觀察終端機輸出的訊息。
 
