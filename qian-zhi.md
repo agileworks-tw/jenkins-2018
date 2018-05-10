@@ -21,7 +21,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 請先安裝 Google Chrome 瀏覽器（建議使用最新版本）：
 
-{% embed data="{\"url\":\"https://www.google.com.tw/chrome/\",\"type\":\"link\",\"title\":\"\n      Google Chrome 電腦版\n    \",\"description\":\"Google Chrome 是一款快速、安全又免費的新世代網路瀏覽器，快在電腦上試試看吧！\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.google.com/images/icons/product/chrome-32.png\",\"aspectRatio\":0}}" %}
+下載 Google Chrome 瀏覽器 - [https://www.google.com.tw/chrome/](https://www.google.com.tw/chrome/)
 
 ### 安裝 VirtualBox 虛擬機器軟體
 
