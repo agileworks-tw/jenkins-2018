@@ -7,7 +7,7 @@
   * [備份與還原](jenkins-an-ding/fen-yuan.md)
 * Getting Started
   * [Cloud9](getting-started-1/cloud9.md)
-  * [Jenkins](getting-started-1/unlock-jenkins.md)
+* [啟用 Jenkins](unlock-jenkins.md)
 * [認識 Jenkins Job](job.md)
 * [Hello World](hello-world.md)
 * [Slave 節點部署與管理](slave-bu-shu-guan-li.md)
