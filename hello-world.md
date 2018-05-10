@@ -32,7 +32,7 @@ git clone https://github.com/{USERNAME}/helloworld.git
 cd helloworld
 ```
 
-![](.gitbook/assets/image%20%2852%29.png)
+![](.gitbook/assets/image%20%2853%29.png)
 
 ### 撰寫 Hello World 程式
 
@@ -189,7 +189,7 @@ python hello.
 
 Jenkins 的燈號代表每次建置與測試結果，有些開發團隊建置「實體」的紅綠燈號，讓專案的健康警訊更容易被察覺。
 
-![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2853%29.png)
+![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2854%29.png)
 
 點選「Console Output」觀察終端機輸出的訊息。
 
