@@ -80,13 +80,6 @@ sudo systemctl stop jenkins
 
 ### 延伸閱讀
 
-DigitalOcean 提供的安裝教學：
-
-{% embed data="{\"url\":\"https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04\",\"type\":\"link\",\"title\":\"How To Install Jenkins on Ubuntu 16.04 \| DigitalOcean\",\"description\":\"Jenkins is an open source automation server intended to automate repetitive technical tasks involved in the continuous integration and delivery of software. Jenkins is Java-based and can be installed from Ubuntu packages or by downloading and running\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.digitalocean.com/favicon.ico\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://www.digitalocean.com/assets/community/default\_community\_sharing-65c1cc547375d6e37cc45195b3686769.png\",\"width\":1024,\"height\":536,\"aspectRatio\":0.5234375}}" %}
-
-Jenkins 官方提供的安裝教學：
-
-{% embed data="{\"url\":\"https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu\",\"type\":\"link\",\"title\":\"Installing Jenkins on Ubuntu - Jenkins - Jenkins Wiki\",\"icon\":{\"type\":\"icon\",\"url\":\"https://wiki.jenkins.io/s/en\_GB/6441/82994790ee2f720a5ec8daf4850ac5b7b34d2194/7/\_/favicon.ico\",\"aspectRatio\":0}}" %}
-
-
+* [DigitalOcean 提供的安裝教學](https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04)
+* [Jenkins 官方提供的安裝教學](https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 
