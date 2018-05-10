@@ -2,7 +2,7 @@
 description: 以執行 Shell 方式完成程式編譯與執行。
 ---
 
-# Lab: Hello World
+# 實作：Hello World
 
 ### 建立 Git Repository
 

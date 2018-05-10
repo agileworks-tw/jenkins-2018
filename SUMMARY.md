@@ -7,7 +7,7 @@
 * [安裝示範：Ubuntu Server 16.04 LTS](ubuntu-server-16.04-lts.md)
 * [啟用 Jenkins](unlock-jenkins.md)
 * [認識 Jenkins Job](job.md)
-* [Lab: Hello World](hello-world.md)
+* [實作：Hello World](hello-world.md)
 * [Slave 節點部署與管理](slave-bu-shu-guan-li.md)
 * [備份與還原](fen-yuan.md)
 * [課後測驗](undefined.md)
