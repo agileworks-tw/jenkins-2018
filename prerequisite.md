@@ -50,7 +50,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 解壓縮後會得到一個副檔名為 `.ova` 的虛擬機器封裝檔（OVA 為 Open Virtual Appliance 的縮寫），點擊開啟或使用 VirtualBox 功能選單的「檔案 / 匯入應用裝置」，將 AgileWorks VM 匯入成為新的虛擬機器。
 
-![](.gitbook/assets/image%20%2847%29.png)
+![](.gitbook/assets/image%20%2848%29.png)
 
 ### 開始使用 AgileWorks VM 練習系統
 
@@ -58,7 +58,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 使用 Google Chrome 瀏覽器打開 `localhost:9083` ，等待 Cloud9 編輯器畫面出現。
 
-![Cloud9 &#x4E3B;&#x756B;&#x9762;](https://github.com/agileworks-tw/jenkins-2018/raw/master/.gitbook/assets/image%20%2848%29.png)
+![Cloud9 &#x4E3B;&#x756B;&#x9762;](.gitbook/assets/image%20%2843%29.png)
 
 下方的終端機畫面，可以直接輸入 Shell 指令，請先測試 Java 是否正常安裝。
 
