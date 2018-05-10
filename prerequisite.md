@@ -56,9 +56,18 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 在 VirtualBox 選取「AgileWorks Jenkins」虛擬機器，並點擊「啟動」開始執行。
 
+使用 Google Chrome 瀏覽器打開 `localhost:9083` ，等待 Cloud9 編輯器畫面出現。
 
+![test](https://github.com/agileworks-tw/jenkins-2018/raw/master/.gitbook/assets/image%20%2848%29.png)
 
+下方的終端機畫面，可以直接輸入 Shell 指令，請先測試 Java 是否正常安裝。
 
+```text
+java -version
+javac -version
+```
+
+![](https://github.com/agileworks-tw/jenkins-2018/raw/master/.gitbook/assets/image%20%2839%29.png)
 
 ### 註冊個人的 GitHub、Docker Hub 帳號
 
