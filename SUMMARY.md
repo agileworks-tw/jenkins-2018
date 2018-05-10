@@ -9,8 +9,8 @@
 * [認識 Jenkins Job](job.md)
 * [實作：Hello World](hello-world.md)
 * [實作：Page Speed](zuo-page-speed.md)
+* [實作：PhantomJS 與 YSlow](zuo-phantomjs-yslow.md)
 * [Slave 節點部署與管理](slave-bu-shu-guan-li.md)
 * [備份與還原](fen-yuan.md)
 * [課後測驗](undefined.md)
-* 實作：PhantomJS 與 YSlow
 

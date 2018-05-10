@@ -8,7 +8,7 @@ description: 參數化建置與產生測試報告。
 
 使用 Google 提供的 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=zh-TW) 測試網站效能，可以獲得一個評分：
 
-![](.gitbook/assets/image%20%2857%29.png)
+![](.gitbook/assets/image%20%2860%29.png)
 
 ### 安裝 psi 工具
 
@@ -30,7 +30,7 @@ npm install -g psi
 psi todomvc.com --strategy=mobile
 ```
 
-![](.gitbook/assets/image%20%2842%29.png)
+![](.gitbook/assets/image%20%2844%29.png)
 
 從這個測試結果觀察，分數為達到及格門檻 70 分。
 
@@ -42,11 +42,11 @@ Threshold of 70 not met with score of 67
 
 建議新的 Free-Style Job 並名為「pagespeed」：
 
-![](.gitbook/assets/image.png)
+![](.gitbook/assets/image%20%281%29.png)
 
 在建置流程加入執行 Shell 的 Script 設定：
 
-![](.gitbook/assets/image%20%2829%29.png)
+![](.gitbook/assets/image%20%2830%29.png)
 
 儲存後，立即進行一次「馬上建置」。
 
@@ -54,7 +54,7 @@ Threshold of 70 not met with score of 67
 
 第一次建置的結果，你會看到代表建置錯誤的「紅燈」，先別緊張，點進去「Console Output」觀察遇到什麼問題。 
 
-![](.gitbook/assets/image%20%2841%29.png)
+![](.gitbook/assets/image%20%2843%29.png)
 
 從訊息中可以得知 `psi: not found` 是造成錯誤的主要原因。
 
@@ -89,7 +89,7 @@ cd ~/workspace/pagespeed
 
 定義一個名為 `install-nodejs` 的 Free-Style Job。
 
-![](.gitbook/assets/image%20%2818%29.png)
+![](.gitbook/assets/image%20%2819%29.png)
 
 使用 Shell Script 幫 Jenkins 使用者安裝 Node.js 執行環境。
 
@@ -135,7 +135,7 @@ psi todomvc.com --strategy=mobile
 * 名稱：TARGET\_URL
 * 預設值：_\(自訂一組預設網址\)_
 
-![](.gitbook/assets/image%20%2855%29.png)
+![](.gitbook/assets/image%20%2858%29.png)
 
 修改 Shell 程式碼，使用 `$TARGET_URL`參數取代網址。
 
@@ -151,11 +151,11 @@ psi $TARGET_URL --strategy=mobile
 
 使用「Build with Parameters」執行任務，此時可以輸入自訂的網址：
 
-![](.gitbook/assets/image%20%2850%29.png)
+![](.gitbook/assets/image%20%2853%29.png)
 
 選擇一個可以通過測試的網址，執行結果將會出現代表建置成功的藍色燈號。
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 
 ### 建立測試報告
 
@@ -203,7 +203,7 @@ psi $TARGET_URL --strategy=mobile --format tap | tee pagespeed.tap
 
 為了讓 TAP 格式的測試報告，可以在 Jenkins 建置結果顯示，請先在「外掛程式管理」安裝 TAP 套件。
 
-![](.gitbook/assets/image%20%2838%29.png)
+![](.gitbook/assets/image%20%2839%29.png)
 
 外掛安裝完成後，重新啟動 Jenkins 伺服器。
 
@@ -214,7 +214,7 @@ psi $TARGET_URL --strategy=mobile --format tap | tee pagespeed.tap
 
 執行幾次`pagespeed`輸入不同網址，分別得到通過與不通過的結果，可以在 TAP Test Results 看到測試報告。
 
-![](.gitbook/assets/image%20%289%29.png)
+![](.gitbook/assets/image%20%2810%29.png)
 
 
 
