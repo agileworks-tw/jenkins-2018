@@ -18,15 +18,15 @@ Ubuntu Server 16.04 是架設 Jenkins 伺服器常見的作業系統選項，它
 
 下載 Ubuntu Server ISO 映像檔：[https://www.ubuntu-tw.org/modules/tinyd0/](https://www.ubuntu-tw.org/modules/tinyd0/)
 
-![&#x9078;&#x64C7; Linux - Ubuntu \(64-bit\)](.gitbook/assets/image%20%2848%29.png)
+![&#x9078;&#x64C7; Linux - Ubuntu \(64-bit\)](.gitbook/assets/image%20%2849%29.png)
 
-![&#x5EFA;&#x8B70;&#x914D;&#x7F6E;&#x81F3;&#x5C11; 2048MB &#x8A18;&#x61B6;&#x9AD4;&#x7D66;&#x865B;&#x64EC;&#x6A5F;&#x5668;](.gitbook/assets/image%20%2852%29.png)
+![&#x5EFA;&#x8B70;&#x914D;&#x7F6E;&#x81F3;&#x5C11; 2048MB &#x8A18;&#x61B6;&#x9AD4;&#x7D66;&#x865B;&#x64EC;&#x6A5F;&#x5668;](.gitbook/assets/image%20%2853%29.png)
 
 其餘選項依照建議的預設值。
 
 第一次執行虛擬機器，掛載 Ubuntu Server ISO 映像檔。
 
-![](.gitbook/assets/image%20%2828%29.png)
+![](.gitbook/assets/image%20%2829%29.png)
 
 請先完成 Ubuntu Server 安裝。
 
@@ -38,7 +38,7 @@ Ubuntu Server 16.04 是架設 Jenkins 伺服器常見的作業系統選項，它
 
 VirtualBox 的網路預設為 NAT 模式，必須自行設定 Port Forwarding，才能讓 22\(ssh\) 與 8080\(jenkins\) 兩個 TCP Port 可以被存取。
 
-![](.gitbook/assets/image%20%2856%29.png)
+![](.gitbook/assets/image%20%2857%29.png)
 
 ### 安裝 Jenkins
 
