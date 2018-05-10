@@ -2,7 +2,7 @@
 description: 以 Ubuntu Server 為例，說明 Jenkins 完整安裝流程。
 ---
 
-# Ubuntu Server 16.04 LTS
+# 安裝示範：Ubuntu Server 16.04 LTS
 
 Ubuntu Server 16.04 是架設 Jenkins 伺服器常見的作業系統選項，它是免費的 Open Source 開放源碼作業系統，對於新手也是相當友善的選項，甚至不需要部署實體的伺服器主機，只要租用 AWS EC2 或 Linode VPS 的雲端虛擬機器，就可以開始輕鬆入門。
 
