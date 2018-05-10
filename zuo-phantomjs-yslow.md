@@ -78,7 +78,7 @@ then
     sudo apt-get install phantomjs
 fi
 
-wget -O screenshot.js https://gist.githubusercontent.com/lyhcode/6d7e8d0748333bbb0ae7bc1913f97e4d/raw/46af46f3bf804f8dc4d15277114e0013ebac4c16/screenshot.js
+wget -O screenshot.js https://gist.githubusercontent.com/lyhcode/6d7e8d0748333bbb0ae7bc1913f97e4d/raw/da5470678c40fff8e436692f6f3e9bfe73adb4e4/screenshot.js
 
 export QT_QPA_PLATFORM=offscreen
 
