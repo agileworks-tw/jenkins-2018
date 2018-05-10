@@ -73,11 +73,11 @@ javac -version
 
 如果你還沒有 GitHub 帳號，請先註冊一組：
 
-{% embed data="{\"url\":\"https://github.com/join\",\"type\":\"link\",\"title\":\"Build software better, together\",\"description\":\"GitHub is where people build software. More than 25 million people use GitHub to discover, fork, and contribute to over 69 million projects.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://assets-cdn.github.com/images/modules/open\_graph/github-logo.png\",\"width\":1200,\"height\":1200,\"aspectRatio\":1}}" %}
+註冊 GitHub 帳號 - [https://github.com/join](https://github.com/join)
 
 如果你還沒有 Docker Hub 帳號，請先註冊一組：
 
-{% embed data="{\"url\":\"https://hub.docker.com/\",\"type\":\"link\",\"icon\":{\"type\":\"icon\",\"url\":\"https://hub.docker.com/favicon.ico\",\"aspectRatio\":0}}" %}
+註冊 Docker Hub 帳號 - [https://hub.docker.com/](https://hub.docker.com/)
 
 ### 常見問題處理：VT-x is not available
 
@@ -106,6 +106,4 @@ AMD-V is disabled in the BIOS (VERR_SVM_DISABLED).
 ![](.gitbook/assets/image%20%285%29.png)
 
 由於不同電腦主機板的 BIOS 設置方式有所差異，通常在開機階段按下 F12 或 Del 按鍵，可以進入設定選單模式，請參閱筆電或主機板提供的原廠手冊。
-
-
 
