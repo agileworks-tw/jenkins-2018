@@ -1,7 +1,7 @@
 # Table of contents
 
 * [版本控制、自動化測試與持續整合實務](README.md)
-* [前置準備](qian-zhi.md)
+* [前置準備](prerequisite.md)
 * [Jenkins 安裝與設定](jenkins-an-ding/README.md)
   * [Ubuntu Server 16.04 LTS](jenkins-an-ding/ubuntu-server-16.04-lts.md)
   * [備份與還原](jenkins-an-ding/fen-yuan.md)
