@@ -29,7 +29,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 請先下載並安裝最新版本的 VirtualBox 軟體及延伸套件（Extension Pack）：
 
-{% embed data="{\"url\":\"https://www.virtualbox.org/wiki/Downloads\",\"type\":\"link\",\"title\":\"\n      Downloads – Oracle VM VirtualBox\n    \",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.virtualbox.org/graphics/VirtualBox.ico\",\"aspectRatio\":0}}" %}
+下載 VirtualBox 軟體 - [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 以 Windows 為例，安裝 VirtualBox 所需要下載的程式包含：
 
