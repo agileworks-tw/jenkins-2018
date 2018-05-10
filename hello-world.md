@@ -10,15 +10,15 @@ description: 以執行 Shell 方式完成程式編譯與執行。
 
 [建立](https://github.com/new)一個新的 Git Repository（設置參考下圖）：
 
-![](.gitbook/assets/image%20%2810%29.png)
+![](.gitbook/assets/image%20%2813%29.png)
 
 新的 Repository 建立完成，可以在 GitHub 進行瀏覽：
 
-![](.gitbook/assets/image%20%2832%29.png)
+![](.gitbook/assets/image%20%2837%29.png)
 
 點選「Clone or download」取得 Git Repository URL：
 
-![](.gitbook/assets/image%20%2835%29.png)
+![](.gitbook/assets/image%20%2843%29.png)
 
 這段 URL 的格式為（其中 `{USERNAME}` 是個人 GitHub 帳號名稱）：
 
@@ -36,7 +36,7 @@ git clone https://github.com/{USERNAME}/helloworld.git
 cd helloworld
 ```
 
-![](.gitbook/assets/image%20%2856%29.png)
+![](.gitbook/assets/image%20%2867%29.png)
 
 ### 撰寫 Hello World 程式
 
@@ -102,7 +102,7 @@ python hello.py
 
 參考螢幕截圖：
 
-![](.gitbook/assets/image%20%2840%29.png)
+![](.gitbook/assets/image%20%2848%29.png)
 
 ### 上傳編輯過的專案檔案到 GitHub
 
@@ -134,17 +134,17 @@ git push -u origin master
 https://github.com/{USERNAME}/hellworld
 ```
 
-![](.gitbook/assets/image%20%2831%29.png)
+![](.gitbook/assets/image%20%2836%29.png)
 
 ### 建立 Jenkins Job
 
 點選左側選單的「新增作業」進入工作定義的畫面，在「Enter an item name」欄位輸入新工作名稱，例如 `helloworld` ，再選擇「建置 Free-Style 軟體專案」。
 
-![](.gitbook/assets/image%20%2848%29.png)
+![](.gitbook/assets/image%20%2859%29.png)
 
 進入 Free-Style Job 的任務組態設定。
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%282%29.png)
 
 在原始碼管理區塊，選擇「Git」並設定「Repository URL」的內容，這邊使用的 URL 就是在 GitHub 提供的 `.git `位址：
 
@@ -152,11 +152,11 @@ https://github.com/{USERNAME}/hellworld
 https://github.com/{USERNAME}/helloworld.git
 ```
 
-![](.gitbook/assets/image%20%2819%29.png)
+![](.gitbook/assets/image%20%2823%29.png)
 
 在「建置」的「新增建置步驟」選擇「執行 Shell」：
 
-![](.gitbook/assets/image%20%2828%29.png)
+![](.gitbook/assets/image%20%2833%29.png)
 
 撰寫建置所需的 Shell 指令：
 
@@ -185,19 +185,19 @@ python hello.
 
 編輯完成後，按下最下方的「儲存」按鈕，回到專案的主頁面，再點選「馬上建置」。
 
-![](.gitbook/assets/image%20%2825%29.png)
+![](.gitbook/assets/image%20%2830%29.png)
 
 等待建置完成，在「建置歷程」出現建置記錄，點選燈號進入 `#1` 的建置歷程頁面。
 
-![](.gitbook/assets/image%20%2847%29.png)
+![](.gitbook/assets/image%20%2858%29.png)
 
 Jenkins 的燈號代表每次建置與測試結果，有些開發團隊建置「實體」的紅綠燈號，讓專案的健康警訊更容易被察覺。
 
-![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2857%29.png)
+![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2868%29.png)
 
 點選「Console Output」觀察終端機輸出的訊息。
 
-![](.gitbook/assets/image%20%2813%29.png)
+![](.gitbook/assets/image%20%2816%29.png)
 
 撰寫在 Shell 的建置指令，執行結果都會在 Console Output 中記錄。
 

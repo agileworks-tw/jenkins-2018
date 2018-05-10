@@ -8,6 +8,7 @@
 * [啟用 Jenkins](unlock-jenkins.md)
 * [認識 Jenkins Job](job.md)
 * [實作：Hello World](hello-world.md)
+* [實作：Page Speed](zuo-page-speed.md)
 * [Slave 節點部署與管理](slave-bu-shu-guan-li.md)
 * [備份與還原](fen-yuan.md)
 * [課後測驗](undefined.md)
