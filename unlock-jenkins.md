@@ -20,7 +20,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 接著會看到「Customize Jenkins」的畫面，請選擇「Install suggested plugins」：
 
-![](.gitbook/assets/image%20%2828%29.png)
+![](.gitbook/assets/image%20%2829%29.png)
 
 等候 Plugins 安裝完成。
 
@@ -32,7 +32,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 點選「Start using Jenkins」進入 Jenkins 主畫面。
 
-![](.gitbook/assets/image%20%2841%29.png)
+![](.gitbook/assets/image%20%2842%29.png)
 
 完成所有步驟，接下來需要使用 Jenkins 只要開啟 `localhost:9088` 即可。
 
