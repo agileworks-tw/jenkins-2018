@@ -158,9 +158,9 @@ node('master') {
 }
 ```
 
-我們可以透過上述方式指定特定的 `node` 進行建置，若沒有指定將由 Jenkins 自行判斷
+我們可以透過上述方式指定特定的 `node` 進行建置，若沒有指定將由 Jenkins 自行判斷。
 
-除了節點的 name，也可以指定特定的 label，如
+除了節點的 name，也可以指定特定的 label，例如：
 
 ```groovy
 node('unix && 64bit') {
@@ -168,7 +168,7 @@ node('unix && 64bit') {
 }
 ```
 
-定義方式可參考下圖
+定義方式可參考下圖：
 
 ![](https://github.com/agileworks-tw/tutorial/raw/ithome/jenkinsWithDocker/jenkins/jenkins2/pipeline/tutorial/slave-label.png)
 
