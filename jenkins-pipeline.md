@@ -150,7 +150,7 @@ node {
 
 ### 指定特定 Slave 進行建置
 
-假設已經有設置 Jenkins Slave 節點
+假設已經有設置 Jenkins Slave 節點：
 
 ```groovy
 node('master') {
@@ -205,7 +205,7 @@ try{
 
 ### stage 定義
 
-stage 的定義，可以讓你的建置步驟更清楚，可讀性更好
+stage 的定義，可以讓你的建置步驟更清楚，可讀性更好：
 
 ```groovy
 node {
