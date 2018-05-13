@@ -53,7 +53,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 ![](.gitbook/assets/image%20%2866%29.png)
 
 {% hint style="info" %}
-AgileWorks VM 預設的帳號密碼為 `user` / `12345`
+AgileWorks VM 預設的帳號密碼為 `user` / `12345`，如果需要變更，請使用 `passwd`指令自行修改為自訂的密碼。
 {% endhint %}
 
 ### 開始使用 AgileWorks VM 練習系統
