@@ -52,6 +52,10 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 ![](.gitbook/assets/image%20%2866%29.png)
 
+{% hint style="info" %}
+AgileWorks VM 預設的帳號密碼為 `user` / `12345`
+{% endhint %}
+
 ### 開始使用 AgileWorks VM 練習系統
 
 在 VirtualBox 選取「AgileWorks Jenkins」虛擬機器，並點擊「啟動」開始執行。

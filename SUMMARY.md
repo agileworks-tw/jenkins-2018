@@ -4,7 +4,7 @@
 * [前置準備](prerequisite.md)
 * [認識持續整合](chi-zheng-he.md)
 * [Jenkins 安裝與設定](jenkins-an-ding.md)
-* [安裝示範：Ubuntu Server 16.04 LTS](ubuntu-server-16.04-lts.md)
+* [伺服器安裝指南](ubuntu-server-16.04-lts.md)
 * [啟用 Jenkins](unlock-jenkins.md)
 * [認識 Jenkins Job](job.md)
 * [實作：Hello World](hello-world.md)

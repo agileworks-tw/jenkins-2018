@@ -2,7 +2,7 @@
 description: 以 Ubuntu Server 為例，說明 Jenkins 完整安裝流程。
 ---
 
-# 安裝示範：Ubuntu Server 16.04 LTS
+# 伺服器安裝指南
 
 Ubuntu Server 16.04 是架設 Jenkins 伺服器常見的作業系統選項，它是免費的 Open Source 開放源碼作業系統，對於新手也是相當友善的選項，甚至不需要部署實體的伺服器主機，只要租用 AWS EC2 或 Linode VPS 的雲端虛擬機器，就可以開始輕鬆入門。
 
@@ -21,6 +21,10 @@ Ubuntu Server 16.04 是架設 Jenkins 伺服器常見的作業系統選項，它
 ![&#x9078;&#x64C7; Linux - Ubuntu \(64-bit\)](.gitbook/assets/image%20%2864%29.png)
 
 ![&#x5EFA;&#x8B70;&#x914D;&#x7F6E;&#x81F3;&#x5C11; 2048MB &#x8A18;&#x61B6;&#x9AD4;&#x7D66;&#x865B;&#x64EC;&#x6A5F;&#x5668;](.gitbook/assets/image%20%2868%29.png)
+
+{% hint style="info" %}
+如果需要執行 GitLab CE 請至少配置 4096MB 以上的記憶體量。
+{% endhint %}
 
 其餘選項依照建議的預設值。
 
@@ -54,7 +58,7 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
 
-### 管理 Jenkins 服務
+#### 管理 Jenkins 服務
 
 啟動
 
@@ -74,9 +78,13 @@ sudo systemctl restart jenkins
 sudo systemctl stop jenkins
 ```
 
-### 修改預設的 8080 Port
+#### 修改預設的 8080 Port
 
 編輯 `/etc/default/jenkins`檔案，將 `HTTP_PORT=8080` 改為自訂的 Port 號碼。
+
+### 安裝 GitLab
+
+
 
 ### 延伸閱讀
 
