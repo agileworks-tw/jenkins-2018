@@ -28,6 +28,8 @@ Ubuntu Server 16.04 是架設 Jenkins 伺服器常見的作業系統選項，它
 
 其餘選項依照建議的預設值。
 
+### 安裝 Ubuntu Server 16.04
+
 第一次執行虛擬機器，掛載 Ubuntu Server ISO 映像檔。
 
 ![](.gitbook/assets/image%20%2835%29.png)
@@ -43,6 +45,24 @@ Ubuntu Server 16.04 是架設 Jenkins 伺服器常見的作業系統選項，它
 VirtualBox 的網路預設為 NAT 模式，必須自行設定 Port Forwarding，才能讓 22\(ssh\) 與 8080\(jenkins\) 兩個 TCP Port 可以被存取。
 
 ![](.gitbook/assets/image%20%2872%29.png)
+
+#### 進行系統更新
+
+為確保 Ubuntu Server 的套件皆為最新狀態，在系統安裝完成後，建議進行一次完整的更新。
+
+```text
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+### 安裝 OpenJDK
+
+Jenkins 需要使用 OpenJDK 8 的版本才能運行，以下指令先移除系統自帶的 `openjdk-9-jre-headless` 套件，再安裝 `openjdk-8-jdk-headless`套件。
+
+```text
+sudo apt-get purge openjdk-*
+sudo apt-get -y install openjdk-8-jdk-headless
+```
 
 ### 安裝 Jenkins
 
@@ -60,19 +80,19 @@ sudo apt-get install jenkins
 
 #### 管理 Jenkins 服務
 
-啟動
+啟動服務
 
 ```bash
 sudo systemctl start jenkins
 ```
 
-重新啟動
+重新啟動服務
 
 ```bash
 sudo systemctl restart jenkins
 ```
 
-停止
+停止服務
 
 ```bash
 sudo systemctl stop jenkins
@@ -80,14 +100,24 @@ sudo systemctl stop jenkins
 
 #### 修改預設的 8080 Port
 
-編輯 `/etc/default/jenkins`檔案，將 `HTTP_PORT=8080` 改為自訂的 Port 號碼。
+如果需要變更 Jenkins 使用的 HTTP Port 號碼，請編輯 `/etc/default/jenkins`檔案，將 `HTTP_PORT=8080` 改為自訂的 Port 號碼。
 
 ### 安裝 GitLab
 
+### 系統權限相關設置
 
+sudoer
+
+group 
+
+* user to sudo
+* user to docker
+* jenkins to sudo
+* jenkins to docker
 
 ### 延伸閱讀
 
-* [DigitalOcean 提供的安裝教學](https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04)
+* [DigitalOcean 提供的 Jenkins 安裝教學](https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04)
 * [Jenkins 官方提供的安裝教學](https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
+* [How To Install and Configure GitLab on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-gitlab-on-ubuntu-16-04)
 
