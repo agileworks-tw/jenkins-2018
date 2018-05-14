@@ -173,6 +173,26 @@ npm --version
 npm install -g pm2
 ```
 
+### 安裝 Python
+
+同時安裝 Python 2.7 與 Python 3.x 兩種版本。
+
+```text
+sudo apt-get install python python3
+```
+
+### 安裝 Cloud9
+
+Cloud9 是一款 Web-based 的整合開發環境，方便於使用瀏覽器在遠端伺服器進行程式碼的編輯與終端機指令的執行。
+
+安裝指令：
+
+```text
+git clone https://github.com/c9/core.git c9sdk
+cd c9sdk
+scripts/install-sdk.sh
+```
+
 ### 系統權限相關設置
 
 編輯 `/etc/sudoers`加入 `NOPASSWD:` 設定，讓 `sudo`不需要輸入密碼。
