@@ -146,9 +146,44 @@ sudo systemctl start gitlab-runsvdir.service    # 啟動
 
 使用瀏覽器開啟 `http://localhost:8081`開始使用 GitLab，第一次使用必須設定管理者帳號（root）的密碼。
 
+### 安裝 Node.js
+
+先安裝 NVM 工具，方便管理與升級 Node.js 的安裝版本。
+
+```text
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+重新登入後，安裝 Node.js 8.x 最新版：
+
+```text
+nvm install v8
+```
+
+檢查是否正確安裝：
+
+```text
+node --version
+npm --version
+```
+
+安裝 PM2 工具：
+
+```text
+npm install -g pm2
+```
+
 ### 系統權限相關設置
 
-sudoer
+編輯 `/etc/sudoers`加入 `NOPASSWD:` 設定，讓 `sudo`不需要輸入密碼。
+
+```text
+%sudo   ALL=(ALL:ALL) NOPASSWD: ALL
+```
+
+{% hint style="warning" %}
+請注意 `sudo` 免輸入密碼會為系統帶來資安風險。
+{% endhint %}
 
 group 
 
