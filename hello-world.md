@@ -58,21 +58,31 @@ http://localhost:8081/user/helloworld.git
 https://github.com/{USERNAME}/helloworld.git
 ```
 
+{% hint style="info" %}
+為管控專案原始碼安全，企業開發團隊自建 GitLab 服務，可以架設於實體伺服器或雲端虛擬主機，並定時進行資料備份。
+{% endhint %}
+
 ### 複製專案到本地端進行修改
 
-接下來，請回到 Cloud9 使用 `git`指令複製（Clone）整個專案到本地端：
+接下來，請回到 Cloud9 使用 `git clone`指令複製整個專案的檔案到本地端：
 
 ```bash
 cd ~/workspace
-git clone https://github.com/{USERNAME}/helloworld.git
+git clone http://localhost:8081/demo/helloworld.git
 cd helloworld
 ```
 
-![](.gitbook/assets/image%20%2882%29.png)
+![](.gitbook/assets/image%20%2875%29.png)
 
 ### 撰寫 Hello World 程式
 
-Hello World / Java
+分別使用 Java、C 與 Python 撰寫 Hello World 程式。
+
+1. HelloWorld.java
+2. main.c
+3. hello.py
+
+#### Hello World / Java
 
 {% code-tabs %}
 {% code-tabs-item title="HelloWorld.java" %}
@@ -93,7 +103,7 @@ javac HelloWorld.java
 java HelloWorld
 ```
 
-Hello World / C
+#### Hello World / C
 
 {% code-tabs %}
 {% code-tabs-item title="main.c" %}
@@ -105,6 +115,7 @@ int main()
     printf("Hello World\n");
     return 0;
 }
+
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -116,7 +127,7 @@ gcc -o main main.c
 ./main
 ```
 
-Hello World / Python
+#### Hello World / Python
 
 {% code-tabs %}
 {% code-tabs-item title="hello.py" %}
@@ -134,7 +145,7 @@ python hello.py
 
 參考螢幕截圖：
 
-![](.gitbook/assets/image%20%2859%29.png)
+
 
 ### 上傳編輯過的專案檔案到 GitHub
 
@@ -225,7 +236,7 @@ python hello.
 
 Jenkins 的燈號代表每次建置與測試結果，有些開發團隊建置「實體」的紅綠燈號，讓專案的健康警訊更容易被察覺。
 
-![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2883%29.png)
+![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2884%29.png)
 
 點選「Console Output」觀察終端機輸出的訊息。
 

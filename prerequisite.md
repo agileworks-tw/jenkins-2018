@@ -50,7 +50,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 解壓縮後會得到一個副檔名為 `.ova` 的虛擬機器封裝檔（OVA 為 Open Virtual Appliance 的縮寫），點擊開啟或使用 VirtualBox 功能選單的「檔案 / 匯入應用裝置」，將 AgileWorks VM 匯入成為新的虛擬機器。
 
-![](.gitbook/assets/image%20%2877%29.png)
+![](.gitbook/assets/image%20%2878%29.png)
 
 {% hint style="info" %}
 AgileWorks VM 預設的帳號密碼為 `user` / `12345`，如果需要變更，請使用 `passwd`指令自行修改為自訂的密碼。
