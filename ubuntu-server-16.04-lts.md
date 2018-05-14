@@ -104,6 +104,13 @@ sudo systemctl stop jenkins
 
 ### 安裝 GitLab
 
+
+
+| 帳號 | 密碼 |
+| --- | --- | --- |
+| root | 00000000 |
+| demo | demo12345 |
+
 ### 系統權限相關設置
 
 sudoer
