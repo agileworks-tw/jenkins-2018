@@ -153,6 +153,14 @@ group
 * jenkins to sudo
 * jenkins to docker
 
+### 預設服務位址
+
+| 服務類型 | 位址 |
+| --- | --- | --- | --- |
+| Jenkins | http://localhost:8080 |
+| GitLab | http://localhost:8081 |
+|  |  |
+
 ### 預設帳號密碼
 
 AgileWorks Jenkins VM 預設為以下帳號及密碼：
