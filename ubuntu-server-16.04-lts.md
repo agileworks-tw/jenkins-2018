@@ -158,10 +158,11 @@ group
 AgileWorks Jenkins VM 預設為以下帳號及密碼：
 
 | 類別 | 帳號名稱 | 密碼 |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | Ubuntu Linux User | user | user12345 |
 | GitLab Administrator | root | root12345 |
 | GitLab User | demo | demo12345 |
+| Jenkins Administrator | admin | admin12345 |
 
 ### 延伸閱讀
 
