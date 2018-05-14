@@ -27,3 +27,30 @@ AgileWorks Jenkins 工作坊的內容包括：
 依實際培訓時數與需求調整內容。
 {% endhint %}
 
+## 教學團隊簡介
+
+創科資訊成立於 2015 年，提供敏捷軟體開發技術顧問與培訓服務，協助企業開發團隊應用新一代技術與開發工具，前端開發技術例如 React、React Native、Vue 及 Webpack⋯，後端開發平台 Node.js、PHP Laravel、.NET Core 與 SpringBoot⋯，雲端運算服務如 AWS、GCP 與 Azure，DevOps 工具例如 GitLab、Jenkins 與 Docker 等。 
+
+為加速軟體人才培育，於 2017 年底新成立 [Monospace 共同工作空間](https://www.facebook.com/monospace.tw/)，是台灣中部第一間以 IT 為主題的 Coworking Space，專注於 UI / UX 設計與前端開發主題，吸引數位游牧工作者與斜槓青年進駐，經常舉辦主題相關的講座與工作坊，形成資訊科技跨域人才交流學習的聚落。
+
+代表性客戶：
+
+* iThome
+* PCHome
+* 資策會
+* 工研院
+* 中華電信學院
+* 台灣大哥大
+* 光寶科技
+* 啟德電子
+
+謝宗穎 / Spooky
+
+* 創科資訊 Co-founder
+* DevOps 技術顧問
+
+林彥宏 / Kyle
+
+* 創科資訊 Co-founder
+* 光寶科技 Jenkins 技術顧問
+
