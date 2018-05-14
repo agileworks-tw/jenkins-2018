@@ -132,9 +132,15 @@ external_url 'http://localhost:8081'
 sudo gitlab-ctl reconfigure
 ```
 
-打開 `http://localhost:8081`
+GitLab 系統管理提示：
 
-第一次使用必須設定管理者帳號（root）的密碼。
+```text
+sudo systemctl disable gitlab-runsvdir.service  # 關閉開機自動執行
+sudo systemctl stop gitlab-runsvdir.service     # 停止
+sudo systemctl start gitlab-runsvdir.service    # 啟動
+```
+
+使用瀏覽器開啟 `http://localhost:8081`開始使用 GitLab，第一次使用必須設定管理者帳號（root）的密碼。
 
 ### 系統權限相關設置
 
