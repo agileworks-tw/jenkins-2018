@@ -170,10 +170,11 @@ group
 AgileWorks Jenkins VM 預設為以下帳號及密碼：
 
 | 類別 | 帳號名稱 | 密碼 |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- |
 | Ubuntu Linux User | user | user12345 |
 | GitLab Administrator | root | root12345 |
-| GitLab User | demo | demo12345 |
+| GitLab User | user | user12345 |
+| GitLab Demo | demo | demo12345 |
 | Jenkins Administrator | admin | admin12345 |
 | Jenkins User | user | user12345 |
 
@@ -182,4 +183,6 @@ AgileWorks Jenkins VM 預設為以下帳號及密碼：
 * [DigitalOcean 提供的 Jenkins 安裝教學](https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04)
 * [Jenkins 官方提供的安裝教學](https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 * [How To Install and Configure GitLab on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-gitlab-on-ubuntu-16-04)
+
+
 
