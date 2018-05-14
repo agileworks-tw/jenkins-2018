@@ -102,6 +102,10 @@ sudo systemctl stop jenkins
 
 如果需要變更 Jenkins 使用的 HTTP Port 號碼，請編輯 `/etc/default/jenkins`檔案，將 `HTTP_PORT=8080` 改為自訂的 Port 號碼。
 
+#### 安裝其他常用的 Plugins
+
+* TAP - ​https://plugins.jenkins.io/tap
+
 ### 安裝 GitLab
 
 安裝相依套件：
