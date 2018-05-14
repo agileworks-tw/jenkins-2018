@@ -136,11 +136,6 @@ sudo gitlab-ctl reconfigure
 
 第一次使用必須設定管理者帳號（root）的密碼。
 
-| 帳號 | 密碼 |
-| --- | --- | --- |
-| root | 00000000 |
-| demo | demo12345 |
-
 ### 系統權限相關設置
 
 sudoer
@@ -151,6 +146,16 @@ group
 * user to docker
 * jenkins to sudo
 * jenkins to docker
+
+### 預設帳號密碼
+
+AgileWorks Jenkins VM 預設為以下帳號及密碼：
+
+| 類別 | 帳號名稱 | 密碼 |
+| --- | --- | --- | --- |
+| Ubuntu Linux User | user | user12345 |
+| GitLab Administrator | root | root12345 |
+| GitLab User | demo | demo12345 |
 
 ### 延伸閱讀
 
