@@ -193,6 +193,10 @@ cd c9sdk
 scripts/install-sdk.sh
 ```
 
+### 安裝 Docker
+
+
+
 ### 系統權限相關設置
 
 編輯 `/etc/sudoers`加入 `NOPASSWD:` 設定，讓 `sudo`不需要輸入密碼。
@@ -235,9 +239,10 @@ AgileWorks Jenkins VM 預設為以下帳號及密碼：
 
 ### 延伸閱讀
 
-* [DigitalOcean 提供的 Jenkins 安裝教學](https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04)
-* [Jenkins 官方提供的安裝教學](https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
+* [Installing Jenkins on Ubuntu](https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu) \(Jenkins Official Wiki\)
+* [How To Install Jenkins on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04)
 * [How To Install and Configure GitLab on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-gitlab-on-ubuntu-16-04)
+* [How To Install and Use Docker on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
 
 
 
