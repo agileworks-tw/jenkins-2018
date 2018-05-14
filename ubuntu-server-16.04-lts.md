@@ -218,7 +218,7 @@ group
 | --- | --- | --- | --- |
 | Jenkins | http://localhost:8080 |
 | GitLab | http://localhost:8081 |
-|  |  |
+| Cloud9 | http://localhost:8181 |
 
 ### 預設帳號密碼
 
