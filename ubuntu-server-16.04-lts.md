@@ -104,7 +104,37 @@ sudo systemctl stop jenkins
 
 ### 安裝 GitLab
 
+安裝相依套件：
 
+```text
+sudo apt-get update
+sudo apt-get install ca-certificates curl openssh-server postfix
+```
+
+安裝 GitLab 套件：
+
+```text
+cd /tmp
+curl -LO https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh
+sudo bash /tmp/script.deb.sh
+sudo apt-get install gitlab-ce
+```
+
+修改 `/etc/gitlab/gitlab.rb` 設定：
+
+```text
+external_url 'http://localhost:8081'
+```
+
+重置並啟動 GitLab 服務：
+
+```text
+sudo gitlab-ctl reconfigure
+```
+
+打開 `http://localhost:8081`
+
+第一次使用必須設定管理者帳號（root）的密碼。
 
 | 帳號 | 密碼 |
 | --- | --- | --- |
