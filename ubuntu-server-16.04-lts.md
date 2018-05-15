@@ -64,6 +64,18 @@ sudo apt-get purge openjdk-*
 sudo apt-get -y install openjdk-8-jdk-headless
 ```
 
+### 安裝 Maven
+
+Apache Maven 是常見的 Java Build Tool。
+
+```text
+sudo apt-get install maven
+```
+
+### 安裝 Groovy & Gradle
+
+使用 sdkman
+
 ### 安裝 Jenkins
 
 使用 `apt-get` 套件管理工具，輕鬆搞定 Jenkins 的安裝：
