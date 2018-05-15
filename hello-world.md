@@ -16,29 +16,29 @@ description: 以執行 Shell 方式完成程式編譯與執行。
 
 新專案名稱填入「helloworld」，按下「Create project」建立。
 
-![](.gitbook/assets/image%20%2816%29.png)
+![](.gitbook/assets/image%20%2817%29.png)
 
 檢視新建的「helloworld」專案頁面。
 
-![](.gitbook/assets/image%20%2886%29.png)
+![](.gitbook/assets/image%20%2887%29.png)
 
 點選「Add Readme」加入專案說明，使用 Markdown 語法撰寫說明檔，完成後按下「Commit changes」儲存修改。
 
-![](.gitbook/assets/image%20%2854%29.png)
+![](.gitbook/assets/image%20%2855%29.png)
 
-![](.gitbook/assets/image%20%2852%29.png)
+![](.gitbook/assets/image%20%2853%29.png)
 
 從「＋」選單選擇「New file」加入新檔案。
 
-![](.gitbook/assets/image%20%2855%29.png)
+![](.gitbook/assets/image%20%2856%29.png)
 
 從 Template 選擇「.gitignore」，並在「Apply a .gitignore template」選擇「Java」程式語言。
 
-![](.gitbook/assets/image%20%2870%29.png)
+![](.gitbook/assets/image%20%2871%29.png)
 
 確認自動從範本產生的 `.gitignore` 檔案內容，按下「Commit changes」儲存新檔案。
 
-![](.gitbook/assets/image%20%2860%29.png)
+![](.gitbook/assets/image%20%2861%29.png)
 
 目前專案的 Repository 已有兩個檔案，分別是「README.md」與「.gitignore」。
 
@@ -50,7 +50,7 @@ description: 以執行 Shell 方式完成程式編譯與執行。
 http://localhost:8081/user/helloworld.git
 ```
 
-![](.gitbook/assets/image%20%2887%29.png)
+![](.gitbook/assets/image%20%2888%29.png)
 
 備註：新增 Repository 也可以在 GitHub 平台進行操作，以下為 GitHub Repository URL 的格式，`{USERNAME}` 是個人 GitHub 帳號名稱。
 
@@ -72,7 +72,7 @@ git clone http://localhost:8081/demo/helloworld.git
 cd helloworld
 ```
 
-![](.gitbook/assets/image%20%2889%29.png)
+![](.gitbook/assets/image%20%2890%29.png)
 
 ### 撰寫 Hello World 程式
 
@@ -145,13 +145,13 @@ python hello.py
 
 參考螢幕截圖：
 
-![](.gitbook/assets/image%20%2849%29.png)
+![](.gitbook/assets/image%20%2850%29.png)
 
 ### 將專案檔案變更上傳到 Git Repository
 
 先執行 `git status`檢視檔案異動。
 
-![](.gitbook/assets/image%20%2869%29.png)
+![](.gitbook/assets/image%20%2870%29.png)
 
 Why？！為什麼異動清單中，並沒有包含 `HelloWorld.class`檔案？
 
@@ -177,7 +177,7 @@ git commit -a -m 'add source files'
 git push -u origin master
 ```
 
-![](.gitbook/assets/image%20%2865%29.png)
+![](.gitbook/assets/image%20%2866%29.png)
 
 回到 GitLab 檢視是否上傳成功，檢視 Git Repository 的 URL 格式為：
 
@@ -185,17 +185,17 @@ git push -u origin master
 http://localhost:8081/user/helloworld
 ```
 
-![](.gitbook/assets/image%20%2881%29.png)
+![](.gitbook/assets/image%20%2882%29.png)
 
 ### 建立 Jenkins Job
 
 點選左側選單的「新增作業」進入工作定義的畫面，在「Enter an item name」欄位輸入新工作名稱「 helloworld」，再選擇「建置 Free-Style 軟體專案」，按下「OK」完成建立。
 
-![](.gitbook/assets/image%20%2821%29.png)
+![](.gitbook/assets/image%20%2822%29.png)
 
 進入 Free-Style Job 的任務組態設定。
 
-![](.gitbook/assets/image%20%2875%29.png)
+![](.gitbook/assets/image%20%2876%29.png)
 
 在原始碼管理區塊，選擇「Git」並設定「Repository URL」的內容，這邊填入的 URL 就是 GitLab Repository 的 `.git`位址：
 
@@ -203,15 +203,15 @@ http://localhost:8081/user/helloworld
 http://localhost:8081/demo/helloworld.git
 ```
 
-![](.gitbook/assets/image%20%2844%29.png)
+![](.gitbook/assets/image%20%2845%29.png)
 
 解決缺少存取權限的問題，先點「Crendentials」的「Add」按鈕，填入 GitLab 使用者的 Username 與 Password。
 
-![](.gitbook/assets/image%20%2815%29.png)
+![](.gitbook/assets/image%20%2816%29.png)
 
 選取新建的 Credential 設定，測試通過後，錯誤訊息就會消失。
 
-![](.gitbook/assets/image%20%2848%29.png)
+![](.gitbook/assets/image%20%2849%29.png)
 
 接著在「建置」的「新增建置步驟」選擇「執行 Shell」：
 
@@ -244,21 +244,21 @@ python hello.py
 
 編輯完成後，按下最下方的「儲存」按鈕，回到專案的主頁面，再點選「馬上建置」。
 
-![](.gitbook/assets/image%20%2882%29.png)
+![](.gitbook/assets/image%20%2883%29.png)
 
 等待建置完成，在「建置歷程」出現建置記錄，點選燈號進入 `#1` 的建置歷程頁面。
 
-![](.gitbook/assets/image%20%2829%29.png)
+![](.gitbook/assets/image%20%2830%29.png)
 
-![](.gitbook/assets/image%20%2879%29.png)
+![](.gitbook/assets/image%20%2880%29.png)
 
 Jenkins 的燈號代表每次建置與測試結果，有些開發團隊建置「實體」的紅綠燈號，讓專案的健康警訊更容易被察覺。
 
-![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2898%29.png)
+![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%2899%29.png)
 
 點選「Console Output」觀察終端機輸出的訊息。
 
-![](.gitbook/assets/image%20%2878%29.png)
+![](.gitbook/assets/image%20%2879%29.png)
 
 撰寫在 Shell 的建置指令，執行結果都會在 Console Output 中記錄。
 
