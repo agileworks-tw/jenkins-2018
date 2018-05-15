@@ -9,11 +9,11 @@
 * [認識 Jenkins Job](job.md)
 * [實作：Hello World](hello-world.md)
 * [實作：Maven](zuo-maven.md)
+* 實作：Gradle
 * [實作：Page Speed](zuo-page-speed.md)
 * [實作：PhantomJS](zuo-phantomjs-yslow.md)
 * [Jenkins Pipeline](jenkins-pipeline.md)
 * [Slave 節點部署與管理](slave-bu-shu-guan-li.md)
 * [備份與還原](fen-yuan.md)
 * [課後測驗](undefined.md)
-* 實作：Gradle
 
