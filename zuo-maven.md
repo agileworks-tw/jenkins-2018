@@ -15,8 +15,9 @@ mvn archetype:generate -DgroupId=com.example -DartifactId=MyApp \
 
 Maven 預設的 Java Project Layout：
 
-* src/main/java 主要的程式碼
-* src/test/java JUnit 單元測試的程式碼
+* `pom.xml` Maven 設定檔
+* `src/main/java` 主要的程式碼
+* `src/test/java` JUnit 單元測試的程式碼
 
 Maven Build Lifecycle
 
