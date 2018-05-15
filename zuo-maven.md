@@ -13,7 +13,7 @@ mvn archetype:generate -DgroupId=com.example -DartifactId=MyApp \
 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 
-Maven 預設的 Java Project Layout：
+Maven 預設的 [Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)：
 
 * `pom.xml` Maven 設定檔
 * `src/main/java` 主要的程式碼
