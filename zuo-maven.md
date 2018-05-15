@@ -1,3 +1,7 @@
+---
+description: 使用 Maven Build Tool 自動化建置與測試 Java 專案。
+---
+
 # 實作：Maven
 
 檢查 Maven 版本。
