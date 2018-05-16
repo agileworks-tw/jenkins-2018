@@ -13,7 +13,7 @@
 
 ![](.gitbook/assets/image%20%2835%29.png)
 
-點選「新增節點」建立 `docker-slave-001 `新節點。
+點選「新增節點」建立 `docker-slave-001` 新節點。
 
 ![](.gitbook/assets/image%20%286%29.png)
 

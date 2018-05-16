@@ -74,7 +74,26 @@ sudo apt-get install maven
 
 ### 安裝 Groovy & Gradle
 
-使用 sdkman
+安裝必要的套件。
+
+```text
+sudo apt-get install zip unzip
+```
+
+安裝 sdkman 工具。
+
+```text
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+```
+
+安裝 Groovy 與 Gradle。
+
+```text
+sdk install groovy
+sdk install gradle
+```
 
 ### 安裝 Jenkins
 
@@ -140,6 +159,8 @@ sudo apt-get install gitlab-ce
 
 ```text
 external_url 'http://localhost:8081'
+unicorn['port'] = 8180
+gitlab_workhorse['auth_backend'] = "http://localhost:8180"
 ```
 
 重置並啟動 GitLab 服務：
