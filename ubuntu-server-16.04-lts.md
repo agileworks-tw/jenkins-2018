@@ -254,6 +254,17 @@ sudo apt-get update
 sudo apt-get install -y docker-ce
 ```
 
+### 安裝 .NET Core
+
+```text
+wget -q packages-microsoft-prod.deb https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+
+sudo apt-get install apt-transport-https
+sudo apt-get update
+sudo apt-get install dotnet-sdk-2.1.200
+```
+
 ### 系統權限相關設置
 
 編輯 `/etc/sudoers`加入 `NOPASSWD:` 設定，讓 `sudo`不需要輸入密碼。
