@@ -218,7 +218,13 @@ sudo apt-get install python python3
 
 Cloud9 是一款 Web-based 的整合開發環境，方便於使用瀏覽器在遠端伺服器進行程式碼的編輯與終端機指令的執行。
 
-安裝指令：
+先安裝必要的系統套件。
+
+```text
+sudo apt-get install build-essential
+```
+
+安裝 Cloud9。
 
 ```text
 git clone https://github.com/c9/core.git c9sdk
