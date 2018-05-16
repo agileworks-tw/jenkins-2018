@@ -251,10 +251,7 @@ pm2 dump
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
-apt-cache policy docker-ce
 sudo apt-get install -y docker-ce
-sudo systemctl status docker
-sudo usermod -aG docker ${USER}
 ```
 
 ### 系統權限相關設置
@@ -269,12 +266,14 @@ sudo usermod -aG docker ${USER}
 請注意 `sudo` 免輸入密碼會為系統帶來資安風險。
 {% endhint %}
 
-group 
+將 user 與 jenkins 加入至 sudo 與 docker 群組。 
 
-* user to sudo
-* user to docker
-* jenkins to sudo
-* jenkins to docker
+```text
+sudo usermod -aG docker ${USER}
+sudo usermod -aG docker jenkins
+sudo usermod -aG sudo ${USER}
+sudo usermod -aG sudo jenkins
+```
 
 ### 預設服務位址
 
