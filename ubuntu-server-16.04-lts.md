@@ -232,9 +232,30 @@ cd c9sdk
 scripts/install-sdk.sh
 ```
 
+使用 PM2 啟動 Cloud9。
+
+```text
+ pm2 start server.js --name "cloud9" -- --debug -l 0.0.0.0 -p 8181 -w /home/user -a :
+```
+
+```text
+sudo env PATH=$PATH:/home/user/.nvm/versions/node/v8.11.2/bin /home/user/.nvm/versions/node/v8.11.2/lib/node_modules/pm2/bin/pm2 startup systemd -u user --hp /home/user
+pm2 dump
+```
+
 ### 安裝 Docker
 
+安裝 Docker 的指令：
 
+```text
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+apt-cache policy docker-ce
+sudo apt-get install -y docker-ce
+sudo systemctl status docker
+sudo usermod -aG docker ${USER}
+```
 
 ### 系統權限相關設置
 
