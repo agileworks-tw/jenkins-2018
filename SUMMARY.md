@@ -9,7 +9,7 @@
 * [認識 Jenkins Job](job.md)
 * [實作：Hello World](hello-world.md)
 * [實作：Maven](zuo-maven.md)
-* 實作：Gradle
+* [實作：Gradle](zuo-gradle.md)
 * [實作：Page Speed](zuo-page-speed.md)
 * [實作：PhantomJS](zuo-phantomjs-yslow.md)
 * [Jenkins Pipeline](jenkins-pipeline.md)

@@ -12,31 +12,31 @@ description: 啟用 Jenkins 的前置設定。
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-![](.gitbook/assets/image%20%2813%29.png)
+![](.gitbook/assets/image%20%2814%29.png)
 
 將這段密碼複製，貼上至「Unlock Jenkins」畫面的「Administrator password」欄位，按下「Continue」按鈕。
 
-![](.gitbook/assets/image%20%2839%29.png)
+![](.gitbook/assets/image%20%2840%29.png)
 
 接著會看到「Customize Jenkins」的畫面，請選擇「Install suggested plugins」：
 
-![](.gitbook/assets/image%20%2850%29.png)
+![](.gitbook/assets/image%20%2851%29.png)
 
 等候 Plugins 安裝完成。
 
-![](.gitbook/assets/image%20%2826%29.png)
+![](.gitbook/assets/image%20%2827%29.png)
 
 設定一組管理者帳號，或是選擇「Continue as admin」跳過此步驟。
 
-![](.gitbook/assets/image%20%2820%29.png)
+![](.gitbook/assets/image%20%2821%29.png)
 
 點選「Start using Jenkins」進入 Jenkins 主畫面。
 
-![](.gitbook/assets/image%20%2880%29.png)
+![](.gitbook/assets/image%20%2881%29.png)
 
 完成所有步驟，接下來需要使用 Jenkins 只要開啟 `localhost:8080` 即可。
 
-![](.gitbook/assets/image%20%2821%29.png)
+![](.gitbook/assets/image%20%2822%29.png)
 
 {% hint style="info" %}
 建議從右上角的 admin 下拉選單，點選設定將密碼修改成容易記住的新密碼。
