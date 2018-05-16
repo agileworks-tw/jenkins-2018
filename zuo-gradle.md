@@ -55,5 +55,11 @@ gradle test
 ./gradlew test
 ```
 
+產生打包的應用程式：
 
+```text
+./gradlew distZip
+```
+
+下載 `basic-demo.zip` 解壓縮並執行。
 
