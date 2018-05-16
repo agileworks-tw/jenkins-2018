@@ -277,11 +277,12 @@ sudo usermod -aG sudo jenkins
 
 ### 預設服務位址
 
-| 服務類型 | 位址 |
-| --- | --- | --- | --- |
-| Jenkins | http://localhost:8080 |
-| GitLab | http://localhost:8081 |
-| Cloud9 | http://localhost:8181 |
+| 服務類型 | Port | VirtualBox Port | 備註 |
+| --- | --- | --- | --- | --- |
+| OpenSSH | 22 | 2222 | ssh user@localhost -p 2222 |
+| Jenkins | 8080 | 8080 | http://localhost:8080 |
+| GitLab | 8081 | 8081 | http://localhost:8081 |
+| Cloud9 | 8181 | 8181 | http://localhost:8181 |
 
 ### 預設帳號密碼
 
