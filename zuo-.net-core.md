@@ -1,5 +1,7 @@
 # 實作：.NET Core
 
+### Console Application
+
 建立專案：
 
 ```text
@@ -27,6 +29,23 @@ namespace myApp
 執行程式：
 
 ```text
+dotnet restore
+dotnet run
+```
+
+### MVC Web Application
+
+建立專案：
+
+```text
+dotnet new mvc -o myWeb
+cd myWeb
+```
+
+執行程式：
+
+```text
+dotnet restore
 dotnet run
 ```
 
