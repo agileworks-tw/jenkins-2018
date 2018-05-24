@@ -32,7 +32,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 點選「Start using Jenkins」進入 Jenkins 主畫面。
 
-![](.gitbook/assets/image%20%2881%29.png)
+![](.gitbook/assets/image%20%2882%29.png)
 
 完成所有步驟，接下來需要使用 Jenkins 只要開啟 `localhost:8080` 即可。
 
