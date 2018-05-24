@@ -14,5 +14,17 @@ Together with Docker comes additional technologies, which are as follows:
 
 ![](.gitbook/assets/image%20%2878%29.png)
 
+由多個 Layer 組成 Docker image。
+
+![](.gitbook/assets/image%20%28104%29.png)
+
+使用 Ubuntu image 運行 Docker 容器。
+
+![](.gitbook/assets/image%20%2882%29.png)
+
+### 參考資料
+
+* [Containers 101: Docker fundamentals](https://www.infoworld.com/article/3077875/linux/containers-101-docker-fundamentals.html)
+
 
 

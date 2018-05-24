@@ -8,7 +8,7 @@ description: 參數化建置與產生測試報告。
 
 使用 Google 提供的 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=zh-TW) 測試網站效能，可以獲得一個評分：
 
-![](.gitbook/assets/image%20%2892%29.png)
+![](.gitbook/assets/image%20%2893%29.png)
 
 ### 安裝 psi 工具
 
@@ -135,7 +135,7 @@ psi todomvc.com --strategy=mobile
 * 名稱：TARGET\_URL
 * 預設值：_\(自訂一組預設網址\)_
 
-![](.gitbook/assets/image%20%2885%29.png)
+![](.gitbook/assets/image%20%2886%29.png)
 
 修改 Shell 程式碼，使用 `$TARGET_URL`參數取代網址。
 

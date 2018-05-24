@@ -20,7 +20,7 @@ description: 以執行 Shell 方式完成程式編譯與執行。
 
 檢視新建的「helloworld」專案頁面。
 
-![](.gitbook/assets/image%20%2895%29.png)
+![](.gitbook/assets/image%20%2896%29.png)
 
 點選「Add Readme」加入專案說明，使用 Markdown 語法撰寫說明檔，完成後按下「Commit changes」儲存修改。
 
@@ -50,7 +50,7 @@ description: 以執行 Shell 方式完成程式編譯與執行。
 http://localhost:8081/user/helloworld.git
 ```
 
-![](.gitbook/assets/image%20%2896%29.png)
+![](.gitbook/assets/image%20%2897%29.png)
 
 備註：新增 Repository 也可以在 GitHub 平台進行操作，以下為 GitHub Repository URL 的格式，`{USERNAME}` 是個人 GitHub 帳號名稱。
 
@@ -72,7 +72,7 @@ git clone http://localhost:8081/demo/helloworld.git
 cd helloworld
 ```
 
-![](.gitbook/assets/image%20%2898%29.png)
+![](.gitbook/assets/image%20%2899%29.png)
 
 ### 撰寫 Hello World 程式
 
@@ -185,7 +185,7 @@ git push -u origin master
 http://localhost:8081/user/helloworld
 ```
 
-![](.gitbook/assets/image%20%2890%29.png)
+![](.gitbook/assets/image%20%2891%29.png)
 
 ### 建立 Jenkins Job
 
@@ -195,7 +195,7 @@ http://localhost:8081/user/helloworld
 
 進入 Free-Style Job 的任務組態設定。
 
-![](.gitbook/assets/image%20%2883%29.png)
+![](.gitbook/assets/image%20%2884%29.png)
 
 在原始碼管理區塊，選擇「Git」並設定「Repository URL」的內容，這邊填入的 URL 就是 GitLab Repository 的 `.git`位址：
 
@@ -244,21 +244,21 @@ python hello.py
 
 編輯完成後，按下最下方的「儲存」按鈕，回到專案的主頁面，再點選「馬上建置」。
 
-![](.gitbook/assets/image%20%2891%29.png)
+![](.gitbook/assets/image%20%2892%29.png)
 
 等待建置完成，在「建置歷程」出現建置記錄，點選燈號進入 `#1` 的建置歷程頁面。
 
 ![](.gitbook/assets/image%20%2835%29.png)
 
-![](.gitbook/assets/image%20%2887%29.png)
+![](.gitbook/assets/image%20%2888%29.png)
 
 Jenkins 的燈號代表每次建置與測試結果，有些開發團隊建置「實體」的紅綠燈號，讓專案的健康警訊更容易被察覺。
 
-![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%28108%29.png)
+![&#x5716;&#x7247;&#x53D6;&#x81EA; build-light - https://www.npmjs.com/package/build-light](.gitbook/assets/image%20%28110%29.png)
 
 點選「Console Output」觀察終端機輸出的訊息。
 
-![](.gitbook/assets/image%20%2886%29.png)
+![](.gitbook/assets/image%20%2887%29.png)
 
 撰寫在 Shell 的建置指令，執行結果都會在 Console Output 中記錄。
 
