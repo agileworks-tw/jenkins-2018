@@ -3,8 +3,9 @@
 * [版本控制、自動化測試與持續整合實務](README.md)
 * [前置準備](prerequisite.md)
 * [認識持續整合](chi-zheng-he.md)
-* [Jenkins 安裝與設定](jenkins-an-ding.md)
 * [伺服器安裝指南](ubuntu-server-16.04-lts.md)
+* [認識 Jenkins](jenkins.md)
+* [Jenkins 安裝與設定](jenkins-an-ding.md)
 * [啟用 Jenkins](unlock-jenkins.md)
 * [認識 Jenkins Job](job.md)
 * [實作：Hello World](hello-world.md)
@@ -18,5 +19,4 @@
 * [認識 Docker](docker.md)
 * [備份與還原](fen-yuan.md)
 * [課後測驗](undefined.md)
-* [認識 Jenkins](jenkins.md)
 
