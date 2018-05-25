@@ -57,6 +57,34 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 AgileWorks VM 預設的帳號密碼為 `user` / `12345`，如果需要變更，請使用 `passwd`指令自行修改為自訂的密碼。
 {% endhint %}
 
+### 預設服務位址
+
+| 服務類型 | Port | VirtualBox Port | 備註 |
+| --- | --- | --- | --- | --- |
+| OpenSSH | 22 | 2222 | ssh user@localhost -p 2222 |
+| Jenkins | 8080 | 8080 | http://localhost:8080 |
+| GitLab | 8081 | 8081 | http://localhost:8081 |
+| Cloud9 | 8181 | 8181 | http://localhost:8181 |
+
+{% hint style="info" %}
+為使虛擬機器盡可能減少對記憶體的消耗，預設並不會啟用 GitLab 服務，如需使用，請於終端機執行以下指令，等待時間約 30~60 秒。
+
+`sudo systemctl start gitlab-runsvdir.service`
+{% endhint %}
+
+### 預設帳號密碼 {#mi}
+
+AgileWorks Jenkins VM 預設為以下帳號及密碼：
+
+| 類別 | 帳號名稱 | 密碼 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Ubuntu Linux User | user | user12345 |
+| GitLab Administrator | root | root12345 |
+| GitLab User | user | user12345 |
+| GitLab Demo | demo | demo12345 |
+| Jenkins Administrator | admin | admin12345 |
+| Jenkins User | user | user12345 |
+
 ### 開始使用 AgileWorks VM 練習系統
 
 在 VirtualBox 選取「AgileWorks Jenkins」虛擬機器，並點擊「啟動」開始執行。
