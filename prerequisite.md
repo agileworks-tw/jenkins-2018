@@ -144,3 +144,9 @@ AMD-V is disabled in the BIOS (VERR_SVM_DISABLED).
 
 由於不同電腦主機板的 BIOS 設置方式有所差異，通常在開機階段按下 F12 或 Del 按鍵，可以進入設定選單模式，請參閱筆電或主機板提供的原廠手冊。
 
+{% hint style="info" %}
+Windows 系統可使用 CPU-V 工具檢測虛擬技術是否啟用。
+
+[https://www.azofreeware.com/2015/09/cpu-v.html](https://www.azofreeware.com/2015/09/cpu-v.html)
+{% endhint %}
+
