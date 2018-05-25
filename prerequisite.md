@@ -4,7 +4,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 # 前置準備
 
-| 虛擬機器版本 | **AgileWorks Jenkins 0525** \(`agileworks-jenkins-0525.zip`\) |
+| 虛擬機器版本 | **AgileWorks Jenkins 0525** \(`agileworks-jenkins-0525.ova`\) |
 | --- | --- |
 | 線上講義 | https://jenkins.agileworks.tw/ |
 
@@ -51,9 +51,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 課程由講師在上課時提供裝載 AgileWorks VM 映像檔的 USB 隨身碟，或是透過區域網路的檔案伺服器下載，請確保使用日期為最新版本的映像檔。
 
-壓縮檔名為：`agileworks-jenkins-日期版號.zip`
-
-解壓縮後會得到一個副檔名為 `.ova` 的虛擬機器封裝檔（OVA 為 Open Virtual Appliance 的縮寫），點擊開啟或使用 VirtualBox 功能選單的「檔案 / 匯入應用裝置」，將 AgileWorks VM 匯入成為新的虛擬機器。
+虛擬機器封裝檔名格式為`agileworks-jenkins-版本代號.ova`（OVA 為 Open Virtual Appliance 的縮寫），點擊開啟或使用 VirtualBox 功能選單的「檔案 / 匯入應用裝置」，將 AgileWorks VM 匯入成為新的虛擬機器。
 
 ![](.gitbook/assets/image%20%28104%29.png)
 
