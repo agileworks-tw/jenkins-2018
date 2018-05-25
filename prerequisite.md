@@ -6,7 +6,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 ## 軟硬體需求
 
-使用自備的筆記型電腦，請確認其硬體規格符合開發環境需求：
+使用自備的筆記型電腦，請確認其硬體規格符合開發環境最低需求：
 
 * 建議使用64位元作業系統
 * 實體記憶體 RAM 建議 8GB 以上（最低需求為 4GB）
@@ -15,8 +15,9 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 建議的作業系統版本為：
 
-* Windows 7 或 10
-* Ubuntu Linux 16.04 以上
+* Windows 7 64位元
+* Windows 10 64位元
+* Ubuntu Linux 16.04 64位元以上
 * Mac OS X 10.12 以上
 
 請先安裝 Google Chrome 瀏覽器（建議使用最新版本）：
@@ -46,11 +47,11 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 課程由講師在上課時提供裝載 AgileWorks VM 映像檔的 USB 隨身碟，或是透過區域網路的檔案伺服器下載，請確保使用日期為最新版本的映像檔。
 
-壓縮檔名為：`agileworks-jenkins-日期.zip`
+壓縮檔名為：`agileworks-jenkins-日期版號.zip`
 
 解壓縮後會得到一個副檔名為 `.ova` 的虛擬機器封裝檔（OVA 為 Open Virtual Appliance 的縮寫），點擊開啟或使用 VirtualBox 功能選單的「檔案 / 匯入應用裝置」，將 AgileWorks VM 匯入成為新的虛擬機器。
 
-![](.gitbook/assets/image%20%28103%29.png)
+![](.gitbook/assets/image%20%28104%29.png)
 
 {% hint style="info" %}
 AgileWorks VM 預設的帳號密碼為 `user` / `12345`，如果需要變更，請使用 `passwd`指令自行修改為自訂的密碼。
@@ -60,9 +61,9 @@ AgileWorks VM 預設的帳號密碼為 `user` / `12345`，如果需要變更，�
 
 在 VirtualBox 選取「AgileWorks Jenkins」虛擬機器，並點擊「啟動」開始執行。
 
-使用 Google Chrome 瀏覽器打開 `localhost:9083` ，等待 Cloud9 編輯器畫面出現。
+使用 Google Chrome 瀏覽器打開 `localhost:8181` ，等待 Cloud9 編輯器畫面出現。
 
-![Cloud9 &#x4E3B;&#x756B;&#x9762;](.gitbook/assets/image%20%2890%29.png)
+![](.gitbook/assets/image%20%2888%29.png)
 
 下方的終端機畫面，可以直接輸入 Shell 指令，請先測試 Java 是否正常安裝。
 
@@ -71,7 +72,7 @@ java -version
 javac -version
 ```
 
-![](.gitbook/assets/image%20%2898%29.png)
+![](.gitbook/assets/image%20%2899%29.png)
 
 ### 註冊個人的 GitHub、Docker Hub 帳號
 
