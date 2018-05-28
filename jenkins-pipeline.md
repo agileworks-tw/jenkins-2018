@@ -20,31 +20,39 @@ Jenkins 則在 Pipeline 與 Script Console 等功能，可以使用 Groovy 語�
 
 ### 第一個 Pipeline 程式
 
-使用 `echo`語法輸出一段訊息。
+Pipeline 使用 Groovy DSL 的語法撰寫，以下使用 `echo` 指令顯示一段訊息。
 
 ```groovy
-echo 'Hello Pipeline'
+node {
+   echo 'Hello World'
+}
 ```
 
 執行結果：
 
 ```text
-Started by user anonymous
+[Pipeline] node
+Running on Jenkins in /var/lib/jenkins/workspace/try-pipeline
+[Pipeline] {
 [Pipeline] echo
-hello from Pipeline
+Hello World
+[Pipeline] }
+[Pipeline] // node
 [Pipeline] End of Pipeline
 Finished: SUCCESS
 ```
 
-Groovy 也可以用更接近 Java 語法的方式撰寫，例如：
+我們也可以使用更接近 Java 風格的語法，撰寫 Groovy 程式碼，例如：
 
 ```groovy
 echo("hello from Pipeline");
 ```
 
-但提供更多彈性，並且可以更加簡潔，例如省略括號 `()` 與敘述句結尾的分號 `;`，而字串也可以使用單引號取代雙引號。
+但是 Groovy 的程式碼，比起 Java 提供更多的彈性，例如省略括號「`( )` 」與敘述句結尾的分號「`;`」，而字串也可使用單引號「`'`」。
 
-如果對於 Groovy 程式語言有興趣，可以參考 CodeData 的技術專欄文章「[認識 Groovy 的第一課](http://www.codedata.com.tw/java/groovy-tutorial-1-understanding-groovy/)」。
+Groovy 具備 Scripting Language 不用編譯、就可以直接執行的便利性，其語法更加簡潔，加上 DSL 的特性，更加凸顯其易讀易懂的好處，因此 Jenkins 採用 Groovy 作為 Pipeline 的語法。
+
+如果對於 Groovy 程式語言有興趣，可以參考「[認識 Groovy 的第一課](http://www.codedata.com.tw/java/groovy-tutorial-1-understanding-groovy/)」（CodeData 的技術專欄文章）。
 
 ### 存取 Git Repository 與執行 Shell 指令
 
@@ -275,6 +283,10 @@ node {
 執行結果如下：
 
 ![](https://github.com/agileworks-tw/tutorial/raw/ithome/jenkinsWithDocker/jenkins/jenkins2/pipeline/build/stage-view.png)
+
+### 延伸閱讀
+
+* [Pipeline Examples](https://jenkins.io/doc/pipeline/examples/) \([Sources](https://github.com/jenkinsci/pipeline-examples)\)
 
 
 
