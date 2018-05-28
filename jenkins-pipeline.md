@@ -54,13 +54,82 @@ Groovy 具備 Scripting Language 不用編譯、就可以直接執行的便利�
 
 如果對於 Groovy 程式語言有興趣，可以參考「[認識 Groovy 的第一課](http://www.codedata.com.tw/java/groovy-tutorial-1-understanding-groovy/)」（CodeData 的技術專欄文章）。
 
-### 存取 Git Repository
+### 範例：Timeout, Retry
 
+```groovy
+pipeline {
+    agent any
+    stages {
+        stage('Deploy') {
+            steps {
+                retry(3) {
+                    sh './flakey-deploy.sh'
+                }
 
-
-```text
-http://localhost:8081/user/MyApp.git
+                timeout(time: 3, unit: 'MINUTES') {
+                    sh './health-check.sh'
+                }
+            }
+        }
+    }
+}
 ```
+
+Timeout + Retry
+
+```groovy
+pipeline {
+    agent any
+    stages {
+        stage('Deploy') {
+            steps {
+                timeout(time: 3, unit: 'MINUTES') {
+                    retry(5) {
+                        sh './flakey-deploy.sh'
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+### 範例：Finishing up
+
+```groovy
+pipeline {
+    agent any
+    stages {
+        stage('Test') {
+            steps {
+                sh 'echo "Fail!"; exit 1'
+            }
+        }
+    }
+    post {
+        always {
+            echo 'This will always run'
+        }
+        success {
+            echo 'This will run only if successful'
+        }
+        failure {
+            echo 'This will run only if failed'
+        }
+        unstable {
+            echo 'This will run only if the run was marked as unstable'
+        }
+        changed {
+            echo 'This will run only if the state of the Pipeline has changed'
+            echo 'For example, if the Pipeline was previously failing but is now successful'
+        }
+    }
+}
+```
+
+
+
+
 
 ### 存取 Git Repository 與執行 Shell 指令
 

@@ -47,7 +47,7 @@ gradle test
 
 測試結果的輸出：
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 
 建立 Jenkins Job：
 
