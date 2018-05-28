@@ -54,6 +54,14 @@ Groovy 具備 Scripting Language 不用編譯、就可以直接執行的便利�
 
 如果對於 Groovy 程式語言有興趣，可以參考「[認識 Groovy 的第一課](http://www.codedata.com.tw/java/groovy-tutorial-1-understanding-groovy/)」（CodeData 的技術專欄文章）。
 
+### 存取 Git Repository
+
+
+
+```text
+http://localhost:8081/user/MyApp.git
+```
+
 ### 存取 Git Repository 與執行 Shell 指令
 
 這個範例示範了如何從 GitHub 取回最新的 Git Repository 檔案，並且使用 Maven 進行建置與測試。
