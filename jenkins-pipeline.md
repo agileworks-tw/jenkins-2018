@@ -54,6 +54,45 @@ Groovy 具備 Scripting Language 不用編譯、就可以直接執行的便利�
 
 如果對於 Groovy 程式語言有興趣，可以參考「[認識 Groovy 的第一課](http://www.codedata.com.tw/java/groovy-tutorial-1-understanding-groovy/)」（CodeData 的技術專欄文章）。
 
+### 範例：撰寫註解
+
+Pipeline 的註解語法與 Java / Groovy 完全相同。
+
+```text
+//單行註解
+
+/*
+這是一段
+多行註解
+*/
+```
+
+### 範例：限定節點（Slave）
+
+限制 Job 只能在 Jenkins 伺服器（Master）上面運行：
+
+```text
+node('master') {
+  //...
+}
+```
+
+指定「名稱」限定只使用特定節點執行：
+
+```text
+node('slave1') {
+  //...
+}
+```
+
+或是「標籤（Label）」方式，指定在某些節點上運行：
+
+```text
+node('unix && 64bit') {
+  //...
+}
+```
+
 ### 範例：Timeout, Retry
 
 ```groovy
@@ -126,10 +165,6 @@ pipeline {
     }
 }
 ```
-
-
-
-
 
 ### 存取 Git Repository 與執行 Shell 指令
 
