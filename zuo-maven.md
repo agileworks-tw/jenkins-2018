@@ -76,19 +76,19 @@ git push -u origin master
 
 在 Jenkins 新增一個「建置 Free-Style 軟體專案」。
 
-![](.gitbook/assets/image%20%2830%29.png)
+![](.gitbook/assets/image%20%2831%29.png)
 
 設置 Git 原始碼管理。
 
-![](.gitbook/assets/image%20%2881%29.png)
+![](.gitbook/assets/image%20%2884%29.png)
 
 新增建置「呼叫最上層 Maven 目標」，Goal 設定為 test。
 
-![](.gitbook/assets/image%20%28103%29.png)
+![](.gitbook/assets/image%20%28107%29.png)
 
 新增建置後動作「發布 JUnit 測試結果報告」。
 
-![](.gitbook/assets/image%20%2892%29.png)
+![](.gitbook/assets/image%20%2896%29.png)
 
 建置結果畫面：
 

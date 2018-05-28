@@ -11,7 +11,7 @@
 
 從「管理 Jenkins / 管理節點」進到節點列表的畫面。
 
-![](.gitbook/assets/image%20%2836%29.png)
+![](.gitbook/assets/image%20%2837%29.png)
 
 點選「新增節點」建立 `docker-slave-001` 新節點。
 
@@ -27,13 +27,13 @@
 
 按下「儲存」完成建立新節點的程序。
 
-![](.gitbook/assets/image%20%2828%29.png)
+![](.gitbook/assets/image%20%2829%29.png)
 
 ### 測試新建的 Slave Agent 節點
 
 點選節點的名稱，進到節點的主畫面。
 
-![](.gitbook/assets/image%20%2846%29.png)
+![](.gitbook/assets/image%20%2847%29.png)
 
 從這裡取得 Slave 所需要的啟動指令：
 
@@ -52,7 +52,7 @@ java -jar agent.jar -jnlpUrl http://localhost:8080/computer/docker-slave-001/sla
 
 順利執行後，可以看到 Slave 狀態為已上線（閒置）。
 
-![](.gitbook/assets/image%20%2871%29.png)
+![](.gitbook/assets/image%20%2874%29.png)
 
 請嘗試在新節點執行 `helloworld`的測試，並觀察 `/var/jenkins`路徑的檔案內容。
 

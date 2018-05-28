@@ -6,7 +6,7 @@ description: PhantomJS 是一款功能強大的 WebKit 指令工具，它可以�
 
 建立 `phantomjs` 新任務。
 
-![](.gitbook/assets/image%20%2868%29.png)
+![](.gitbook/assets/image%20%2871%29.png)
 
 先檢查是否已安裝 `phantomjs`，如果尚未安裝，則使用 `apt-get`加裝。
 
@@ -61,7 +61,7 @@ page.open(url, function (status) {
 });
 ```
 
-![](.gitbook/assets/image%20%2862%29.png)
+![](.gitbook/assets/image%20%2864%29.png)
 
 點選程式碼區塊右上角的「Raw」取得檔案下載網址。
 

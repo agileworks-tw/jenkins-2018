@@ -45,7 +45,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 請先安裝完成 VirtualBox 主程式後，再開啟 Extension Pack 安裝檔。
 {% endhint %}
 
-![](.gitbook/assets/image%20%2837%29.png)
+![](.gitbook/assets/image%20%2838%29.png)
 
 ### 取得 AgileWorks VM 映像檔
 
@@ -53,7 +53,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 虛擬機器封裝檔名格式為`agileworks-jenkins-版本代號.ova`（OVA 為 Open Virtual Appliance 的縮寫），點擊開啟或使用 VirtualBox 功能選單的「檔案 / 匯入應用裝置」，將 AgileWorks VM 匯入成為新的虛擬機器。
 
-![](.gitbook/assets/image%20%28106%29.png)
+![](.gitbook/assets/image%20%28110%29.png)
 
 {% hint style="info" %}
 AgileWorks VM 的 Linux 系統預設的帳號密碼為 `user` / `user12345`，如果需要變更密碼，請使用 `passwd`指令自行修改為自訂的密碼。
@@ -63,11 +63,11 @@ AgileWorks VM 的 Linux 系統預設的帳號密碼為 `user` / `user12345`，�
 
 請先檢查虛擬機器的配置，如果電腦硬體條件允許，請將「記憶體」調整至 4096MB 或更高。
 
-![](.gitbook/assets/image%20%2863%29.png)
+![](.gitbook/assets/image%20%2865%29.png)
 
 使用「無標題啟動」啟動虛擬機器。
 
-![](.gitbook/assets/image%20%2887%29.png)
+![](.gitbook/assets/image%20%2890%29.png)
 
 ### 預設服務位址
 
@@ -103,7 +103,7 @@ AgileWorks Jenkins VM 預設為以下帳號及密碼：
 
 使用 Google Chrome 瀏覽器打開 `localhost:8181` ，等待 Cloud9 編輯器畫面出現。
 
-![](.gitbook/assets/image%20%2890%29.png)
+![](.gitbook/assets/image%20%2893%29.png)
 
 下方的終端機畫面，可以直接輸入 Shell 指令，請先測試 Java 是否正常安裝。
 
@@ -112,7 +112,7 @@ java -version
 javac -version
 ```
 
-![](.gitbook/assets/image%20%28101%29.png)
+![](.gitbook/assets/image%20%28105%29.png)
 
 ### 註冊個人的 GitHub、Docker Hub 帳號
 
@@ -144,7 +144,7 @@ AMD-V is disabled in the BIOS (VERR_SVM_DISABLED).
 
 請先進入主機板 BIOS 開機畫面的設置，找到「Intel Virtualization Technology」選項，並將它調整為啟用（Enabled）：
 
-![](.gitbook/assets/image%20%2847%29.png)
+![](.gitbook/assets/image%20%2848%29.png)
 
 或是 AMD 處理器則為 SVM 選項：
 
