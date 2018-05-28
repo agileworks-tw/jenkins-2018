@@ -80,15 +80,15 @@ git push -u origin master
 
 設置 Git 原始碼管理。
 
-![](.gitbook/assets/image%20%2880%29.png)
+![](.gitbook/assets/image%20%2881%29.png)
 
 新增建置「呼叫最上層 Maven 目標」，Goal 設定為 test。
 
-![](.gitbook/assets/image%20%28101%29.png)
+![](.gitbook/assets/image%20%28103%29.png)
 
 新增建置後動作「發布 JUnit 測試結果報告」。
 
-![](.gitbook/assets/image%20%2890%29.png)
+![](.gitbook/assets/image%20%2892%29.png)
 
 建置結果畫面：
 

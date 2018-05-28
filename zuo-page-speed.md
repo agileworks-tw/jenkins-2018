@@ -8,7 +8,7 @@ description: 參數化建置與產生測試報告。
 
 使用 Google 提供的 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=zh-TW) 測試網站效能，可以獲得一個評分：
 
-![](.gitbook/assets/image%20%2894%29.png)
+![](.gitbook/assets/image%20%2896%29.png)
 
 ### 安裝 psi 工具
 
@@ -30,7 +30,7 @@ npm install -g psi
 psi todomvc.com --strategy=mobile
 ```
 
-![](.gitbook/assets/image%20%2864%29.png)
+![](.gitbook/assets/image%20%2865%29.png)
 
 從這個測試結果觀察，分數為達到及格門檻 70 分。
 
@@ -54,7 +54,7 @@ Threshold of 70 not met with score of 67
 
 第一次建置的結果，你會看到代表建置錯誤的「紅燈」，先別緊張，點進去「Console Output」觀察遇到什麼問題。 
 
-![](.gitbook/assets/image%20%2863%29.png)
+![](.gitbook/assets/image%20%2864%29.png)
 
 從訊息中可以得知 `psi: not found` 是造成錯誤的主要原因。
 
@@ -135,7 +135,7 @@ psi todomvc.com --strategy=mobile
 * 名稱：TARGET\_URL
 * 預設值：_\(自訂一組預設網址\)_
 
-![](.gitbook/assets/image%20%2886%29.png)
+![](.gitbook/assets/image%20%2888%29.png)
 
 修改 Shell 程式碼，使用 `$TARGET_URL`參數取代網址。
 
@@ -151,7 +151,7 @@ psi $TARGET_URL --strategy=mobile
 
 使用「Build with Parameters」執行任務，此時可以輸入自訂的網址：
 
-![](.gitbook/assets/image%20%2877%29.png)
+![](.gitbook/assets/image%20%2878%29.png)
 
 選擇一個可以通過測試的網址，執行結果將會出現代表建置成功的藍色燈號。
 

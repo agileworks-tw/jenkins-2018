@@ -52,7 +52,7 @@ java -jar agent.jar -jnlpUrl http://localhost:8080/computer/docker-slave-001/sla
 
 順利執行後，可以看到 Slave 狀態為已上線（閒置）。
 
-![](.gitbook/assets/image%20%2870%29.png)
+![](.gitbook/assets/image%20%2871%29.png)
 
 請嘗試在新節點執行 `helloworld`的測試，並觀察 `/var/jenkins`路徑的檔案內容。
 
