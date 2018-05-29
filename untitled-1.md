@@ -61,21 +61,51 @@ node {
 
 Linux / Mac OS X
 
-```text
+```groovy
 sh 'ifconfig'
 sh 'ls'
 ```
 
 Windows
 
-```text
+```groovy
 bat 'ipconfig'
 bat 'dir'
 ```
 
 ### 使用 Maven 進行測試
 
-```text
-sh 'mvn test'
+```groovy
+sh 'mvn clean test package'
 ```
+
+### 封存建置結果與測試報告
+
+```groovy
+archiveArtifacts artifacts: 'target/*.jar'
+junit 'target/surefire-reports/*.xml'
+```
+
+加入建置階段
+
+```groovy
+node {
+  stage('clone') {
+      git url: 'http://localhost:8081/demo/MyApp.git',
+        credentialsId: '5ac3d6ca-193b-4f06-96c7-944ea0ccb76a',
+        branch: 'master'
+  }
+
+  stage('build') {
+    sh 'mvn clean test package'
+  }
+  
+  stage('archive') {
+      archiveArtifacts artifacts: 'target/*.jar'
+      junit 'target/surefire-reports/*.xml'
+  }
+}
+```
+
+
 
