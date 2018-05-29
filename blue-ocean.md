@@ -12,7 +12,7 @@
 
 勾選「當安裝完成且沒有工作正在執行時，重啟Jenkins」
 
-![](.gitbook/assets/image%20%2897%29.png)
+![](.gitbook/assets/image%20%2898%29.png)
 
 當所有需要安裝的 Plugins 下載完成，Jenkins 將會自動重新啟動，新安裝的 Plugins 將在重啟後可以使用。
 
