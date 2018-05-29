@@ -4,6 +4,7 @@
 * [前置準備](prerequisite.md)
 * [認識持續整合](chi-zheng-he.md)
 * [伺服器安裝指南](ubuntu-server-16.04-lts.md)
+* [備份與還原](fen-yuan.md)
 * [認識 Jenkins](jenkins.md)
 * [Jenkins 安裝與設定](jenkins-an-ding.md)
 * [啟用 Jenkins](unlock-jenkins.md)
@@ -20,7 +21,6 @@
 * [實作：Pipeline + Maven](untitled-1.md)
 * [Blue Ocean](blue-ocean.md)
 * [認識 Docker](docker.md)
-* [備份與還原](fen-yuan.md)
-* [課後測驗](undefined.md)
 * [實作：Docker 101](zuo-docker-101.md)
+* [課後測驗](undefined.md)
 
