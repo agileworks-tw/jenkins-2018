@@ -4,6 +4,8 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 # 前置準備
 
+下載最新虛擬機器映像檔：[**https://ppt.cc/fxZavx**](https://ppt.cc/fxZavx)
+
 | 虛擬機器版本 | **AgileWorks Jenkins 0525** \(`agileworks-jenkins-0525.ova`\) |
 | --- | --- |
 | 線上講義 | https://jenkins.agileworks.tw/ |
