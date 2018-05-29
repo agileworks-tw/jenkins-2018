@@ -58,7 +58,7 @@ Groovy 具備 Scripting Language 不用編譯、就可以直接執行的便利�
 
 Pipeline 的註解語法與 Java / Groovy 完全相同。
 
-```text
+```groovy
 //單行註解
 
 /*
@@ -71,7 +71,7 @@ Pipeline 的註解語法與 Java / Groovy 完全相同。
 
 限制 Job 只能在 Jenkins 伺服器（Master）上面運行：
 
-```text
+```c
 node('master') {
   //...
 }
@@ -79,7 +79,7 @@ node('master') {
 
 指定「名稱」限定只使用特定節點執行：
 
-```text
+```groovy
 node('slave1') {
   //...
 }
@@ -87,7 +87,7 @@ node('slave1') {
 
 或是「標籤（Label）」方式，指定在某些節點上運行：
 
-```text
+```groovy
 node('unix && 64bit') {
   //...
 }
