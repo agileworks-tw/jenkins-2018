@@ -73,5 +73,9 @@ bat 'ipconfig'
 bat 'dir'
 ```
 
+### 使用 Maven 進行測試
 
+```text
+sh 'mvn test'
+```
 
