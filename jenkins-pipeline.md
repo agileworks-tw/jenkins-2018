@@ -400,4 +400,5 @@ node {
 
 * [Pipeline Examples](https://jenkins.io/doc/pipeline/examples/) \([Sources](https://github.com/jenkinsci/pipeline-examples)\)
 * [Fabric8 Pipeline Library](https://github.com/fabric8io/fabric8-pipeline-library)
+* [Pipeline: Basic Steps](https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/)
 
