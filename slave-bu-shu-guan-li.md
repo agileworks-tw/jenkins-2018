@@ -6,6 +6,13 @@ description: Jenkins 提供 Master-Slave 分散式架構。
 
 ![](.gitbook/assets/image%20%2868%29.png)
 
+Jenkins Slave 部署方式：
+
+1. 實體伺服器、桌上型電腦、筆記型電腦、微型電腦、...
+2. 虛擬化伺服器（VMWare、Hyper-V 等）
+3. 虛擬化容器（Docker）
+4. 雲端伺服器（VPS）
+
 建議的 Slave Agent 部署選項：
 
 1. Launch slave agents on Unix machines via SSH 
