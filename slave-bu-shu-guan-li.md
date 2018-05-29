@@ -1,11 +1,17 @@
+---
+description: Jenkins 提供 Master-Slave 分散式架構。
+---
+
 # Slave 節點部署與管理
+
+![](.gitbook/assets/image%20%2868%29.png)
 
 建議的 Slave Agent 部署選項：
 
 1. Launch slave agents on Unix machines via SSH 
 2. Launch slave agents via Java Web Start.
 
-建議使用第二種 JNLP \(Java Web Start\) 方式部署，因為相容於所有支援 Java 執行環境的作業系統，包括 Windows、Linux 與 Mac OS X 等。
+建議使用第二種 JNLP \(Java Web Start\) 方式部署，相容於所有支援 Java 執行環境的作業系統，包括 Windows、Linux 與 Mac OS X 等。
 
 ### 建立新的 Slave Agent 節點
 
@@ -52,7 +58,7 @@ java -jar agent.jar -jnlpUrl http://localhost:8080/computer/docker-slave-001/sla
 
 順利執行後，可以看到 Slave 狀態為已上線（閒置）。
 
-![](.gitbook/assets/image%20%2875%29.png)
+![](.gitbook/assets/image%20%2876%29.png)
 
 請嘗試在新節點執行 `helloworld`的測試，並觀察 `/var/jenkins`路徑的檔案內容。
 
