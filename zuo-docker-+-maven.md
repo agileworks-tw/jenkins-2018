@@ -59,7 +59,7 @@ pipeline {
 
 ```text
 triggers {
-    pollSCM('* * * * *')
+    cron('* * * * *')
 }
 ```
 
