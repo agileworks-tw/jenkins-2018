@@ -27,6 +27,20 @@ Together with Docker comes additional technologies, which are as follows:
 1. [Amazon Elastic Container Service \(ECS\)](https://aws.amazon.com/tw/ecs/details/) 在各種 Amazon EC2 執行個體的叢集間輕鬆執行與管理已啟用 Docker 的應用程式。在本地封裝為容器的應用程式將以與 Amazon ECS 所管理的容器相同的方式部署和運行。
 2. [Azure Kubernetes Service \(AKS\)](https://azure.microsoft.com/zh-tw/services/container-service/) 使用 Azure Container Service 中的 Kubernetes 來協調這些容器的部署，容器的叢集就能夠複製及管理。您可以藉由設定持續組建來生產容器映像及協調流程，提升部署的速度與可靠性。 [在 Azure Kubernetes Service \(AKS\) 使用 Jenkins 與 Kubernetes 的容器 CI/CD](https://azure.microsoft.com/zh-tw/solutions/architecture/container-cicd-using-jenkins-and-kubernetes-on-azure-container-service/)
 
+### 使用 Dockerfile
+
+```text
+FROM ubuntu:latest
+RUN apt-get update && \
+    apt-get install -y git && \
+    apt-get install -y openjdk-11-jdk-headless && \
+    apt-get install -y python
+```
+
+```text
+docker build -t docker_with_git_and_jdk_and_python .
+```
+
 ### 參考資料
 
 * [Containers 101: Docker fundamentals](https://www.infoworld.com/article/3077875/linux/containers-101-docker-fundamentals.html)
