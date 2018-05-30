@@ -23,5 +23,6 @@
 * [Blue Ocean](blue-ocean.md)
 * [認識 Docker](docker.md)
 * [實作：Docker 101](zuo-docker-101.md)
+* [實作：Docker Hello World](zuo-docker-hello-world.md)
 * [課後測驗](undefined.md)
 

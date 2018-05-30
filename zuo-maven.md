@@ -36,7 +36,7 @@ Maven Build Lifecycle
 
 執行一次 `test`觀察產生的 `target` 資料夾。
 
-![](.gitbook/assets/image%20%2818%29.png)
+![](.gitbook/assets/image%20%2819%29.png)
 
 清除建置產生的檔案。
 
@@ -76,19 +76,19 @@ git push -u origin master
 
 在 Jenkins 新增一個「建置 Free-Style 軟體專案」。
 
-![](.gitbook/assets/image%20%2832%29.png)
+![](.gitbook/assets/image%20%2833%29.png)
 
 設置 Git 原始碼管理。
 
-![](.gitbook/assets/image%20%2886%29.png)
+![](.gitbook/assets/image%20%2889%29.png)
 
 新增建置「呼叫最上層 Maven 目標」，Goal 設定為 test。
 
-![](.gitbook/assets/image%20%28111%29.png)
+![](.gitbook/assets/image%20%28115%29.png)
 
 新增建置後動作「發布 JUnit 測試結果報告」。
 
-![](.gitbook/assets/image%20%2899%29.png)
+![](.gitbook/assets/image%20%28103%29.png)
 
 建置結果畫面：
 
@@ -96,7 +96,7 @@ git push -u origin master
 
 JUnit 測試結果報告。
 
-![](.gitbook/assets/image%20%2811%29.png)
+![](.gitbook/assets/image%20%2812%29.png)
 
 
 

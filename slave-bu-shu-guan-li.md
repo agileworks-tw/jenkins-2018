@@ -4,7 +4,7 @@ description: Jenkins 提供 Master-Slave 分散式架構。
 
 # Slave 節點部署與管理
 
-![](.gitbook/assets/image%20%2868%29.png)
+![](.gitbook/assets/image%20%2869%29.png)
 
 Jenkins Slave 部署方式：
 
@@ -25,17 +25,17 @@ Jenkins Slave 部署方式：
 1. 管理 Jenkins／設定全域安全性
 2. TCP port for JNLP agents 選擇「隨機」
 
-![](.gitbook/assets/image%20%28100%29.png)
+![](.gitbook/assets/image%20%28104%29.png)
 
 ### 建立新的 Slave Agent 節點
 
 從「管理 Jenkins / 管理節點」進到節點列表的畫面。
 
-![](.gitbook/assets/image%20%2838%29.png)
+![](.gitbook/assets/image%20%2839%29.png)
 
 點選「新增節點」建立 `docker-slave-001` 新節點。
 
-![](.gitbook/assets/image%20%288%29.png)
+![](.gitbook/assets/image%20%289%29.png)
 
 填寫必要的設定資訊。
 
@@ -43,17 +43,17 @@ Jenkins Slave 部署方式：
 * 標籤：`docker linux`
 * 啟動模式：`Launch agent via Java Web Start`
 
-![](.gitbook/assets/image%20%289%29.png)
+![](.gitbook/assets/image%20%2810%29.png)
 
 按下「儲存」完成建立新節點的程序。
 
-![](.gitbook/assets/image%20%2830%29.png)
+![](.gitbook/assets/image%20%2831%29.png)
 
 ### 測試新建的 Slave Agent 節點
 
 點選節點的名稱，進到節點的主畫面。
 
-![](.gitbook/assets/image%20%2848%29.png)
+![](.gitbook/assets/image%20%2849%29.png)
 
 從這裡取得 Slave 所需要的啟動指令：
 
@@ -72,11 +72,11 @@ java -jar agent.jar -jnlpUrl http://localhost:8080/computer/docker-slave-001/sla
 
 順利執行後，可以看到 Slave 狀態為已上線（閒置）。
 
-![](.gitbook/assets/image%20%2876%29.png)
+![](.gitbook/assets/image%20%2878%29.png)
 
 請嘗試在新節點執行 `helloworld`的測試，並觀察 `/var/jenkins`路徑的檔案內容。
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 
 完成測試後，請按「Ctrl + C」結束在終端機執行的 JNLP Agent 程式，此時 `docker-slave-001`回到離線狀態。
 

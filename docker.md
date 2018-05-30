@@ -12,15 +12,15 @@ Together with Docker comes additional technologies, which are as follows:
 
 ### 比較虛擬機器與虛擬化容器
 
-![](.gitbook/assets/image%20%2884%29.png)
+![](.gitbook/assets/image%20%2887%29.png)
 
 由多個 Layer 組成 Docker image。
 
-![](.gitbook/assets/image%20%28115%29.png)
+![](.gitbook/assets/image%20%28119%29.png)
 
 使用 Ubuntu image 運行 Docker 容器。
 
-![](.gitbook/assets/image%20%2888%29.png)
+![](.gitbook/assets/image%20%2891%29.png)
 
 ### 雲端服務
 
