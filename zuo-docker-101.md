@@ -1,5 +1,7 @@
 # 實作：Docker 101
 
+## Docker Image
+
 映像檔（Image）是 Docker 的重要基礎概念，也是執行容器（Container）所必備。
 
 * 映像檔類似 Ubuntu Live CD / USB 的 ISO。
@@ -245,4 +247,228 @@ docker rmi -f ubuntu:14.04
 ```
 
 實務上我們應避免直接強制刪除映像檔，正確的做法是，先刪除映像檔相關的所有容器，然後才刪除映像檔。
+
+## Docker Container
+
+容器（Container）是映像檔（Image）的執行實例（Instance），容器帶有可讀寫的資料存取空間，讓容器的作業系統與應用程式在運行時，可以保存額外的狀態與資料。
+
+本單元將練習以下的 Docker 指令：
+
+`create`, `start`, `stop`, `ps`, `run`, `exec`, `attach`, `rm`
+
+### 建立容器
+
+先確認本機已有 `ubuntu:latest` 映像檔。
+
+```text
+docker pull ubuntu
+```
+
+執行 `docker create` 指令新建一個容器。
+
+```text
+docker create -it ubuntu:latest
+```
+
+為什麼需要 `-it` 參數呢？實際上這是 `-i` 與 `-t` 兩個參數的縮寫。
+
+* `-i`
+
+  Keep STDIN open even if not attached
+
+* `-t`
+
+  Allocate a pseudo-TTY
+
+使用 `docker ps` 檢視所有容器的狀態。
+
+```text
+docker ps -a
+```
+
+```text
+CONTAINER ID      IMAGE             COMMAND
+2c06ac467b38      ubuntu:latest     "/bin/bash"
+```
+
+因為 `docker create` 指令建立的容器預設為停止狀態，所以加上參數 `-a` 才能顯示包含已停止的容器。
+
+從上面的執行結果，我們可以得知容器的 `CONTAINER ID`，利用 ID 來啟動（或停止）容器。
+
+啟動容器：
+
+```text
+docker start 2c0
+```
+
+通常我們對容器進行操作時，為了讓指令輸入方便，並不會使用完整的 `CONTAINER ID`，只要輸入前三碼字母即可。
+
+容器啟動後，再以 `docker ps` 查詢執行中的容器，可以看到 STATUS 的變化。
+
+```text
+docker ps
+```
+
+停止容器，使用 `docker stop` 指令。
+
+```text
+docker stop 2c0
+```
+
+### 執行容器
+
+使用 `docker run` 可以啟動一個容器，並執行自訂的 Command Line 指令。
+
+```text
+docker run ubuntu /bin/echo Hello, Docker!
+```
+
+執行結果會輸出：
+
+```text
+Hello, Docker!
+```
+
+實際上 `echo` 指令是在 Ubuntu Linux 作業系統容器中執行。
+
+多試試其他 Ubuntu Linux 的指令，例如 `uname`：
+
+```text
+docker run ubuntu /bin/uname -a                                 
+```
+
+輸出結果：
+
+```text
+Linux 5d45430a0a54 4.2.0-27-generic #32~14.04.1-Ubuntu SMP Fri Jan 22 15:32:26 UTC
+2016 x86_64 x86_64 x86_64 GNU/Linux  
+```
+
+Docker Container 提供一個完全隔離的環境給 Ubuntu Linux，有別於傳統的虛擬機器，Docker 的容器十分輕量、隨時可以新建或刪除。
+
+### 執行 Bash Shell
+
+執行：
+
+```text
+docker run -it ubuntu:14.04 /bin/bash
+```
+
+在 Container 的 Shell 試試一些常用的 Linux 指令：
+
+* `ls`
+* `ps`
+* `pwd`
+* `dmesg`
+* `uname`
+
+要結束 Shell 只要執行：
+
+```text
+exit
+```
+
+退出後可以用 `docker ps -a` 觀察容器的狀態，可以發現每一次 Docker 執行完指令後，都會回到停止狀態。
+
+### 背景執行
+
+讓一個長時間執行的指令在背景運作，可以利用 `-d` 參數。
+
+```text
+docker run -d -it ubuntu ping google.com
+```
+
+參數說明：
+
+* `-d` 表示讓程式在後台以背景狀態（Daemonized）的形式執行。
+
+透過 `docker ps` 查詢容器的狀態：
+
+```text
+CONTAINER ID        IMAGE               COMMAND
+374fb78dab41        ubuntu              "ping google.com"
+```
+
+要如何檢視 `ping google.com` 指令的輸出呢？可以透過 `docker logs` 指令：
+
+```text
+docker logs 374
+```
+
+如果想要持續顯示最新的輸出，也可以加上 `-f` 參數（結束用 Ctrl + C 組合鍵）：
+
+```text
+docker logs -f 374
+```
+
+### 進入容器
+
+正在背景狀態執行的容器，可以利用 `docker exec` 執行新的 Bash Shell。
+
+```text
+docker exec -ti 374 /bin/bash
+```
+
+或是執行指令，例如 `ps aux`：
+
+```text
+docker exec -ti 374 ps aux
+```
+
+輸出結果：
+
+```text
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND        
+root         1  0.0  0.2  12832  2048 ?        Ss+  11:01   0:00 ping google.com
+root        26  0.0  0.2  15572  2176 ?        Rs+  11:01   0:00 ps aux
+```
+
+也可以利用 `docker attach` 指令，切換至容器的終端機。
+
+```text
+docker attach 374
+```
+
+如果有多位使用者操作同一個容器，通常執行 `exec` 會比 `attach` 合適，因為 `attach` 會讓每個使用者共用同一個終端機畫面，因此造成互相牽制影響。
+
+### 移除容器
+
+列出所有容器（包含停止狀態的容器）。
+
+```text
+docker ps -a
+```
+
+輸出如下：
+
+```text
+CONTAINER ID        IMAGE               COMMAND
+270ea7ee8b06        ubuntu              "/bin/bash"
+```
+
+如果要移除 `270ea7ee8b06` 這個容器，可以執行 `docker rm` 指令：
+
+```text
+docker rm 270
+```
+
+假如容器還在運行中會出現錯誤，加上 `-f` 參數可以強制移除容器。
+
+```text
+docker rm -f 270ea7ee8b06
+```
+
+如果同時要移除（或停止）所有容器，可以搭配以下 Shell 指令進行：
+
+先停止所有容器。
+
+```text
+docker stop $(docker ps -a -q)
+```
+
+再移除所有容器。
+
+```text
+docker rm $(docker ps -a -q)
+```
 
