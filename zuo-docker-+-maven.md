@@ -14,13 +14,13 @@ maven --version
 exit
 ```
 
-提交 ubuntu\_with\_git\_and\_jdk\_maven
+提交 ubuntu\_with\_git\_and\_jdk\_maven：
 
 ```text
 docker commit 9821a4789b86 ubuntu_with_git_and_jdk_and_maven
 ```
 
-修改 Jenkinsfile
+修改 Jenkinsfile：
 
 ```groovy
 pipeline {

@@ -98,5 +98,45 @@ docker run --rm ubuntu_with_git_and_jdk java -version
 docker run --rm ubuntu_with_git_and_jdk javac -version
 ```
 
+撰寫 HelloWorld 程式碼。
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello! World!");
+    }
+}
+```
+
+使用 Docker 進行編譯。
+
+```text
+docker run --rm -v $PWD:/app -w /app ubuntu_with_git_and_jdk javac Main.java
+```
+
+使用 Docker 執行程式。
+
+```text
+docker run --rm -v $PWD:/app -w /app ubuntu_with_git_and_jdk java Main
+```
+
+建立一個 Git Repository，並將程式碼上傳。
+
+使用 Pipeline 進行編譯與執行。
+
+```groovy
+node('master') {
+  git url: 'http://localhost:8081/user/HelloWorld.git',
+    credentialsId: '023352b7-fbb9-4ee3-9c9c-5b5d734099cc',
+    branch: 'master'
+  
+  sh 'docker run --rm -v $PWD:/app -w /app ubuntu_with_git_and_jdk java -version'
+  sh 'docker run --rm -v $PWD:/app -w /app ubuntu_with_git_and_jdk javac -version'
+    
+  sh 'docker run --rm -v $PWD:/app -w /app ubuntu_with_git_and_jdk javac Main.java'
+  sh 'docker run --rm -v $PWD:/app -w /app ubuntu_with_git_and_jdk java Main'
+}
+```
+
 
 
