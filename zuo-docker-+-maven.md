@@ -10,7 +10,7 @@ docker run -i -t ubuntu_with_git_and_jdk /bin/bash
 
 ```text
 apt-get install -y maven
-maven --version
+mvn --version
 exit
 ```
 
