@@ -472,5 +472,10 @@ docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
 
+### 補充資料
+
+1. [建置 .NET Core 應用程式的 Docker 映像](https://docs.microsoft.com/zh-tw/dotnet/core/docker/building-net-docker-images)
+2. [Portainer - Simple management UI for Docker](https://github.com/portainer/portainer)
+
 
 
