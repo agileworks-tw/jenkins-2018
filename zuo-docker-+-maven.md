@@ -55,3 +55,11 @@ pipeline {
 }
 ```
 
+使用 Triggers 觸發
+
+```text
+triggers {
+    pollSCM('* * * * *')
+}
+```
+
