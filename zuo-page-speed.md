@@ -8,7 +8,7 @@ description: 參數化建置與產生測試報告。
 
 使用 Google 提供的 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=zh-TW) 測試網站效能，可以獲得一個評分：
 
-![](.gitbook/assets/image%20%28103%29.png)
+![](.gitbook/assets/image%20%28104%29.png)
 
 ### 安裝 psi 工具
 

@@ -84,7 +84,7 @@ git push -u origin master
 
 新增建置「呼叫最上層 Maven 目標」，Goal 設定為 test。
 
-![](.gitbook/assets/image%20%28110%29.png)
+![](.gitbook/assets/image%20%28111%29.png)
 
 新增建置後動作「發布 JUnit 測試結果報告」。
 

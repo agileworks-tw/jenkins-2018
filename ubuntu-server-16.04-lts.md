@@ -18,9 +18,9 @@ Ubuntu Server 16.04 是架設 Jenkins 伺服器常見的作業系統選項，它
 
 下載 Ubuntu Server ISO 映像檔：[https://www.ubuntu-tw.org/modules/tinyd0/](https://www.ubuntu-tw.org/modules/tinyd0/)
 
-![&#x9078;&#x64C7; Linux - Ubuntu \(64-bit\)](.gitbook/assets/image%20%28111%29.png)
+![&#x9078;&#x64C7; Linux - Ubuntu \(64-bit\)](.gitbook/assets/image%20%28112%29.png)
 
-![&#x5EFA;&#x8B70;&#x914D;&#x7F6E;&#x81F3;&#x5C11; 2048MB &#x8A18;&#x61B6;&#x9AD4;&#x7D66;&#x865B;&#x64EC;&#x6A5F;&#x5668;](.gitbook/assets/image%20%28116%29.png)
+![&#x5EFA;&#x8B70;&#x914D;&#x7F6E;&#x81F3;&#x5C11; 2048MB &#x8A18;&#x61B6;&#x9AD4;&#x7D66;&#x865B;&#x64EC;&#x6A5F;&#x5668;](.gitbook/assets/image%20%28117%29.png)
 
 {% hint style="info" %}
 如果需要執行 GitLab CE 請至少配置 4096MB 以上的記憶體量。
@@ -44,7 +44,7 @@ Ubuntu Server 16.04 是架設 Jenkins 伺服器常見的作業系統選項，它
 
 VirtualBox 的網路預設為 NAT 模式，必須自行設定 Port Forwarding，才能讓 22\(ssh\) 與 8080\(jenkins\) 兩個 TCP Port 可以被存取。
 
-![](.gitbook/assets/image%20%28121%29.png)
+![](.gitbook/assets/image%20%28122%29.png)
 
 #### 進行系統更新
 

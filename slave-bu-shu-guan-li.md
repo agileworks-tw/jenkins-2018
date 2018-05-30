@@ -20,6 +20,13 @@ Jenkins Slave 部署方式：
 
 建議使用第二種 JNLP \(Java Web Start\) 方式部署，相容於所有支援 Java 執行環境的作業系統，包括 Windows、Linux 與 Mac OS X 等。
 
+### 啟用 JNLP
+
+1. 管理 Jenkins／設定全域安全性
+2. TCP port for JNLP agents 選擇「隨機」
+
+![](.gitbook/assets/image%20%28100%29.png)
+
 ### 建立新的 Slave Agent 節點
 
 從「管理 Jenkins / 管理節點」進到節點列表的畫面。

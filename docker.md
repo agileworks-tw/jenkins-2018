@@ -16,7 +16,7 @@ Together with Docker comes additional technologies, which are as follows:
 
 由多個 Layer 組成 Docker image。
 
-![](.gitbook/assets/image%20%28114%29.png)
+![](.gitbook/assets/image%20%28115%29.png)
 
 使用 Ubuntu image 運行 Docker 容器。
 

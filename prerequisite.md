@@ -55,7 +55,7 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 虛擬機器封裝檔名格式為`agileworks-jenkins-版本代號.ova`（OVA 為 Open Virtual Appliance 的縮寫），點擊開啟或使用 VirtualBox 功能選單的「檔案 / 匯入應用裝置」，將 AgileWorks VM 匯入成為新的虛擬機器。
 
-![](.gitbook/assets/image%20%28113%29.png)
+![](.gitbook/assets/image%20%28114%29.png)
 
 {% hint style="info" %}
 AgileWorks VM 的 Linux 系統預設的帳號密碼為 `user` / `user12345`，如果需要變更密碼，請使用 `passwd`指令自行修改為自訂的密碼。
@@ -114,7 +114,7 @@ java -version
 javac -version
 ```
 
-![](.gitbook/assets/image%20%28108%29.png)
+![](.gitbook/assets/image%20%28109%29.png)
 
 ### 註冊個人的 GitHub、Docker Hub 帳號
 
