@@ -19,7 +19,7 @@
 * [Slave 節點部署與管理](slave-bu-shu-guan-li.md)
 * [Script Console](script-console.md)
 * [Jenkins Pipeline](jenkins-pipeline.md)
-* [實作：Pipeline + Maven](untitled-1.md)
+* [實作：Pipeline + Maven](pipeline+maven.md)
 * [Blue Ocean](blue-ocean.md)
 * [認識 Docker](docker.md)
 * [實作：Docker 101](zuo-docker-101.md)
