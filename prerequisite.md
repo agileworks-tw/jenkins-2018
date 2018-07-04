@@ -4,6 +4,9 @@ description: 安裝 VirtualBox 虛擬機器，使用 AgileWorks VM 練習系統�
 
 # 前置準備
 
+* 線上講義： [https://jenkins.agileworks.tw/](https://jenkins.agileworks.tw/)
+* 虛擬機器下載： （請洽詢開課單位）
+
 | 虛擬機器版本 | **AgileWorks Jenkins XXXX** \(`agileworks-jenkins-XXXX.ova`\)備註：XXXX 為版號。 |
 | --- | --- |
 | 線上講義 | https://jenkins.agileworks.tw/ |
