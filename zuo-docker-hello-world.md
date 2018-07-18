@@ -98,6 +98,21 @@ docker run --rm ubuntu_with_git_and_jdk java -version
 docker run --rm ubuntu_with_git_and_jdk javac -version
 ```
 
+使用 `Dockerfile`
+
+```text
+FROM ubuntu:16.04
+RUN apt-get update && \
+    apt-get install -y git && \
+    apt-get install -y openjdk-8-jdk-headless
+```
+
+從 `Dockerfile` 建立 Docker Image：
+
+```text
+docker build -t ubuntu_with_git_and_jdk8 .
+```
+
 撰寫 HelloWorld 程式碼。
 
 ```java
